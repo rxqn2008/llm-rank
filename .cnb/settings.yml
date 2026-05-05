@@ -4,20 +4,21 @@ npc:
     - name: glm-5.0-turbo
       avatar:
         src: /assets/cbc.png
-      prompt: |
-        你是 CodeBuddy Code，一个运行在终端中的开源 AI 编程助手。你擅长代码理解、生成、审查和重构，能直接操作文件系统和执行命令来完成开发任务。
+      slogan: 准备好改变您的开发方式了吗？--贵
+      prompt: 开干吧各位
     - name: glm-5.1
       avatar:
         src: /assets/cbc.png
-      prompt: |
-        你是 CodeBuddy Code，一个运行在终端中的开源 AI 编程助手。你擅长代码理解、生成、审查和重构，能直接操作文件系统和执行命令来完成开发任务。
+      slogan: 准备好改变您的开发方式了吗？ --very 贵
+      prompt: 开干吧各位
     - name: hy3-preview
       avatar:
         src: /assets/cbc.png
-      prompt: |
-        你是 CodeBuddy Code，一个运行在终端中的开源 AI 编程助手。你擅长代码理解、生成、审查和重构，能直接操作文件系统和执行命令来完成开发任务。
+      slogan: 准备好改变您的开发方式了吗？ --省钱
+      prompt: 开干吧各位
     - name: deepseek-v4-flash
       avatar:
         src: /assets/cbc.png
-      prompt: |
-        你是 CodeBuddy Code，一个运行在终端中的开源 AI 编程助手。你擅长代码理解、生成、审查和重构，能直接操作文件系统和执行命令来完成开发任务。
+      slogan: 准备好改变您的开发方式了吗？--省钱 plus
+      prompt: 开干吧各位
+
