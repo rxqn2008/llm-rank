@@ -1,3 +1,20 @@
+deepseek-v4-pro:
+  issue.comment@npc:
+    default:
+      stages:
+      - name: run with npc
+        image: cnbcool/default-codebuddy-npc:latest
+        settings:
+          ai_model: deepseek-v4-pro
+
+  pull_request.comment@npc:
+    default:
+      stages:
+      - name: run with npc
+        image: cnbcool/default-codebuddy-npc:latest
+        settings:
+          ai_model: deepseek-v4-pro
+
 deepseek-v4-flash:
   issue.comment@npc:
     default:

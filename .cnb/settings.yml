@@ -1,6 +1,16 @@
 npc:
   defaultRole: glm-5.0-turbo
   roles:
+    - name: deepseek-v4-pro
+      avatar:
+        src: /assets/cbc.png
+      slogan: 准备好改变您的开发方式了吗？--省钱+聪明
+      prompt: 开干吧各位
+    - name: deepseek-v4-flash
+      avatar:
+        src: /assets/cbc.png
+      slogan: 准备好改变您的开发方式了吗？--省钱+呆
+      prompt: 开干吧各位
     - name: glm-5.0-turbo
       avatar:
         src: /assets/cbc.png
@@ -15,10 +25,5 @@ npc:
       avatar:
         src: /assets/cbc.png
       slogan: 准备好改变您的开发方式了吗？ --省钱
-      prompt: 开干吧各位
-    - name: deepseek-v4-flash
-      avatar:
-        src: /assets/cbc.png
-      slogan: 准备好改变您的开发方式了吗？--省钱 plus
       prompt: 开干吧各位
 
