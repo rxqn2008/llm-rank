@@ -1,97 +1,48 @@
-deepseek-v4-pro:
+.200k: &200k
   issue.comment@npc:
-    default:
+    - docker:
+        image: cnbcool/default-npc:latest
       stages:
       - name: run with npc
-        image: cnbcool/default-codebuddy-npc:latest
-        settings:
-          ai_model: deepseek-v4-pro
+        type: npc:go
+        options:
+          model: ${CNB_NPC_NAME}
+          contextWindow: 200k
 
   pull_request.comment@npc:
-    default:
+    - docker:
+        image: cnbcool/default-npc:latest
       stages:
       - name: run with npc
-        image: cnbcool/default-codebuddy-npc:latest
-        settings:
-          ai_model: deepseek-v4-pro
+        type: npc:go
+        options:
+          model: ${CNB_NPC_NAME}
+          contextWindow: 200k
 
-deepseek-v4-flash:
+.1m: &1m
   issue.comment@npc:
-    default:
+    - docker:
+        image: cnbcool/default-npc:latest
       stages:
       - name: run with npc
-        image: cnbcool/default-codebuddy-npc:latest
-        settings:
-          ai_model: deepseek-v4-flash
+        type: npc:go
+        options:
+          model: ${CNB_NPC_NAME}
+          contextWindow: 1m
 
   pull_request.comment@npc:
-    default:
+    - docker:
+        image: cnbcool/default-npc:latest
       stages:
       - name: run with npc
-        image: cnbcool/default-codebuddy-npc:latest
-        settings:
-          ai_model: deepseek-v4-flash
+        type: npc:go
+        options:
+          model: ${CNB_NPC_NAME}
+          contextWindow: 1m
 
-hy3-preview:
-  issue.comment@npc:
-    default:
-      stages:
-      - name: run with npc
-        image: cnbcool/default-codebuddy-npc:latest
-        settings:
-          ai_model: hy3-preview
+deepseek-v4-pro: *1m
 
-  pull_request.comment@npc:
-    default:
-      stages:
-      - name: run with npc
-        image: cnbcool/default-codebuddy-npc:latest
-        settings:
-          ai_model: hy3-preview
+glm-5.2: *1m
+glm-5.0-turbo: *200k
 
-glm-5.1:
-  issue.comment@npc:
-    default:
-      stages:
-      - name: run with npc
-        image: cnbcool/default-codebuddy-npc:latest
-        settings:
-          ai_model: glm-5.1
-
-  pull_request.comment@npc:
-    default:
-      stages:
-      - name: run with npc
-        image: cnbcool/default-codebuddy-npc:latest
-        settings:
-          ai_model: glm-5.1
-
-glm-5.0-turbo:
-  issue.comment@npc:
-    default:
-      stages:
-      - name: run with npc
-        image: cnbcool/default-codebuddy-npc:latest
-        settings:
-          ai_model: glm-5.0-turbo
-
-  pull_request.comment@npc:
-    default:
-      stages:
-      - name: run with npc
-        image: cnbcool/default-codebuddy-npc:latest
-        settings:
-          ai_model: glm-5.0-turbo
-
-$:
-  issue.comment@npc:
-    default:
-      stages:
-      - name: run with npc
-        image: cnbcool/default-codebuddy-npc:latest
-
-  pull_request.comment@npc:
-    default:
-      stages:
-      - name: run with npc
-        image: cnbcool/default-codebuddy-npc:latest
+hy3-preview: *200k
