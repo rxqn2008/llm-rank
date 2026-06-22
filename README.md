@@ -1,6 +1,6 @@
-# CodeBuddy Code NPC 配置
+# CodeBuddy NPC
 
-CodeBuddy Code 是一个运行在终端中的开源 AI 编程助手，支持代码理解、生成、审查和重构。
+CodeBuddy 是一个运行在云端的喜欢干活的 NPC。
 
 ## 功能特性
 
@@ -10,18 +10,15 @@ CodeBuddy Code 是一个运行在终端中的开源 AI 编程助手，支持代�
 
 ## 支持的 AI 模型
 
-| 模型 | 说明 |
-|------|------|
-| `glm-5.0-turbo` | 智谱清言 (默认) |
-| `glm-5.1` | 智谱清言 |
-| `hy3-preview` | Hy3 预览版 |
-| `deepseek-v4-flash` | DeepSeek 闪速版 |
+- deepseek-v4-pro
+- deepseek-v4-flash
+- glm-5.2
+- glm-5.1
+- glm-5.0-turbo
+- hy3-preview
 
 ## 配置文件
 
-- `.cnb.yml` - NPC 流水线配置
-- `.cnb/settings.yml` - NPC 角色和默认设置
+- `.cnb.yml` - NPC 行为
+- `.cnb/settings.yml` - NPC 角色
 
-## License
-
-MIT

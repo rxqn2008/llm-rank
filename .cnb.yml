@@ -43,6 +43,7 @@
 deepseek-v4-pro: *1m
 
 glm-5.2: *1m
+glm-5.1: *200k
 glm-5.0-turbo: *200k
 
 hy3-preview: *200k
