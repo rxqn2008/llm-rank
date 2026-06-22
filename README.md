@@ -1,6 +1,6 @@
 # CodeBuddy NPC
 
-CodeBuddy 是一个运行在云端的喜欢干活的 NPC。
+CodeBuddy 是一个运行在云端的喜欢干活的 NPC，开干吧各位。
 
 ## 功能特性
 
