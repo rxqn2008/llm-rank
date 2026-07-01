@@ -41,6 +41,7 @@
           contextWindow: 1m
 
 deepseek-v4-pro: *1m
+deepseek-v4-flash: *1m
 
 glm-5.2: *1m
 glm-5.1: *200k
