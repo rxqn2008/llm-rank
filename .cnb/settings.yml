@@ -1,6 +1,11 @@
 npc:
   defaultRole: deepseek-v4-pro
   roles:
+    - name: hy3
+      avatar:
+        src: /assets/cbc.png
+      slogan: 准备好改变您的开发方式了吗？ --省钱
+      prompt: 开干吧各位  
     - name: deepseek-v4-pro
       avatar:
         src: /assets/cbc.png
@@ -26,9 +31,5 @@ npc:
         src: /assets/cbc.png
       slogan: 准备好改变您的开发方式了吗？--贵
       prompt: 开干吧各位
-    - name: hy3-preview
-      avatar:
-        src: /assets/cbc.png
-      slogan: 准备好改变您的开发方式了吗？ --省钱
-      prompt: 开干吧各位
+
 
