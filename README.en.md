@@ -25,11 +25,14 @@ Simply set clear expectations, and NPC autonomously handles the entire developme
 
 ## Quick Start
 
-In any repository on the CNB platform, **create an Issue and mention `@npc/CodeBuddy`** to assign a task to NPC for autonomous processing.
+No cloning, no setup required. In **your own CNB repository**, **create an Issue and mention `@npc/CodeBuddy`** to assign a task to NPC for autonomous processing.
+
+> 💡 The experience is simple: open the Issues page of any of your repositories, type `@npc/CodeBuddy` followed by your requirements, and leave the rest to NPC.
 
 ### Three-Step Experience
 
-1. **Go to Repository → New Issue**
+1. **Go to your own repository → New Issue**
+   > Any repository works — you don't need to operate in this repository.
 2. **Mention `@npc/CodeBuddy` in the Issue** and clearly describe your requirements (the more specific, the more accurate NPC's execution)
 3. **NPC takes the job and gets to work**: NPC will automatically acquire context, formulate a plan, implement code, and submit a PR. When done, it notifies you in the Issue for review.
 

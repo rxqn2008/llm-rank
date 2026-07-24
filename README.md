@@ -25,12 +25,15 @@ CodeBuddy NPC 是运行在 CNB 平台上的 Cloud Agent，你研发流程中的 
 
 ## 快速开始
 
-在 CNB 平台的任意仓库中，**创建一个 Issue 并 `@npc/CodeBuddy`**，即可将任务派发给 NPC 自主处理。
+无需克隆、无需配置。在 **你自己的 CNB 仓库** 中，**新建一个 Issue 并 `@npc/CodeBuddy`**，即可把任务派发给 NPC 自主处理。
+
+> 💡 体验步骤非常简单：打开你任意仓库的 Issue 页面，输入 `@npc/CodeBuddy` 加上你的需求，剩下的交给 NPC。
 
 ### 三步体验
 
-1. **进入仓库 → 新建 Issue**
-2. **Issue 内容中 `@npc/CodeBuddy`**，清晰描述你的需求（描述越具体，NPC 执行越精准）
+1. **进入你自己的仓库 → 新建 Issue**
+   > 任意仓库都可以，无需在当前仓库操作。
+2. **在 Issue 内容中 `@npc/CodeBuddy`**，清晰描述你的需求（描述越具体，NPC 执行越精准）
 3. **NPC 接单，开始干活**：NPC 将自动获取上下文、制定方案、编码实现、提交 PR，完成后在 Issue 中通知你验收
 
 
