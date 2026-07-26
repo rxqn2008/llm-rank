@@ -10,17 +10,19 @@
 
 ### 未开启「上班模式」
 
-如果未开启上班模式，NPC 需要将开发好的网站打包为 zip 文件，并发布到 Issue 评论区，方便用户直接下载预览。
+如果未开启上班模式，NPC 需要将开发好的网站源码直接打包为 zip 文件，并发布到 Issue 评论区，方便用户直接下载预览。
+
+> ⚠️ **注意**：直接打包源码即可，无需执行构建步骤。
 
 #### 操作步骤
 
-1. **打包网站**
+1. **打包源码**
 
-   将网站构建产物（如 `dist/`、`build/` 或 `public/` 目录）打包为 zip 文件：
+   将网站源码直接打包为 zip 文件：
 
    ```bash
    cd /workspace
-   zip -r website.zip dist/   # 根据实际构建产物目录调整
+   zip -r website.zip .   # 打包当前目录下所有源码
    ```
 
 2. **上传 zip 到 Issue 评论区**
@@ -44,8 +46,8 @@
 #### 完整示例
 
 ```bash
-# 1. 打包构建产物
-zip -r website.zip dist/
+# 1. 打包源码（无需构建）
+zip -r website.zip .
 
 # 2. 上传到 Issue 评论区
 cnb issues upload-file --file website.zip
