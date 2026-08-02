@@ -1,5 +1,5 @@
 npc:
-  defaultRole: hy3
+  defaultRole: deepseek-v4-flash
   roles:
     - name: hy3
       avatar:
