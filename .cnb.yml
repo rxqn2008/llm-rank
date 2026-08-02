@@ -46,7 +46,6 @@ deepseek-v4-flash: *1m
 glm-5.2: *1m
 glm-5.1: *200k
 glm-5.0-turbo: *200k
-kimi-k3: *200k
 minimax-m3: *200k
 
 hy3: *200k

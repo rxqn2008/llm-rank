@@ -56,7 +56,6 @@ CodeBuddy NPC 已支持以下 AI 模型，`@npc/CodeBuddy 可按需选择
 - `glm-5.2`
 - `glm-5.1`
 - `glm-5.0-turbo`
-- `kimi-k3`
 - `minimax-m3`
 - `hy3`
 
