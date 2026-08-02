@@ -1,0 +1,9 @@
+# commitlint 配置：基于约定式提交规范（Conventional Commits）
+# 参考: https://cnb.cool/cnb/plugins/cnbcool/commitlint
+
+extends:
+  - "@commitlint/config-conventional"
+
+rules:
+  # 允许中文提交注释
+  subject-case: [0]

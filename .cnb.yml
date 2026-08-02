@@ -52,6 +52,11 @@ minimax-m3: *200k
 hy3: *200k
 
 main:
+  pull_request:
+    - stages:
+        - name: commitlint
+          image: cnbcool/commitlint
+
   pull_request.mergeable:
     - stages:
         - name: automerge
