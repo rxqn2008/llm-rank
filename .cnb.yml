@@ -52,7 +52,7 @@ minimax-m3: *200k
 hy3: *200k
 
 main:
-  pull_request.approved:
+  pull_request.mergeable:
     - stages:
         - name: automerge
           type: git:auto-merge
