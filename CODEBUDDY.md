@@ -31,7 +31,7 @@
 
 > 💡 **提示**：如果用户对入口不熟悉，可在提醒时附上下面这张截图帮助定位「创建组织 / 创建仓库」入口：
 
-![上班模式权限不足处理指引](./assets/work-mode-permission-tips.png)
+![上班模式权限不足处理指引](https://cnb.cool/npc/CodeBuddy/-/git/raw/HEAD/assets/work-mode-permission-tips.png)
 
 ## 网站开发完成后的交付方式
 
