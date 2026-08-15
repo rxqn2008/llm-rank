@@ -53,6 +53,7 @@ CodeBuddy NPC supports the following AI models, selectable via `@npc/CodeBuddy`:
 
 - `deepseek-v4-pro`
 - `deepseek-v4-flash`
+- `glm-5.3`
 - `glm-5.2`
 - `glm-5.1`
 - `glm-5.0-turbo`
