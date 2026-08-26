@@ -42,8 +42,10 @@
 
 deepseek-v4-pro: *1m
 deepseek-v4-flash: *1m
+deepseek-v4-flash-vision-exp: *1m
 
 glm-5.3: *1m
+glm-5.3-flash: *1m
 glm-5.2: *1m
 kimi-k3: *200k
 minimax-m3: *200k

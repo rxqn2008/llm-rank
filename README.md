@@ -53,7 +53,9 @@ CodeBuddy NPC 已支持以下 AI 模型，`@npc/CodeBuddy 可按需选择
 
 - `deepseek-v4-pro`
 - `deepseek-v4-flash`
+- `deepseek-v4-flash-vision-exp`
 - `glm-5.3`
+- `glm-5.3-flash`
 - `glm-5.2`
 - `kimi-k3`
 - `minimax-m3`
