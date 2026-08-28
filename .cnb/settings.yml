@@ -21,11 +21,11 @@ npc:
         src: /assets/cbc.png
       slogan: 准备好改变您的开发方式了吗？
       prompt: 开干吧各位
-    - name: deepseek-v4-flash-vision-exp
-      avatar:
-        src: /assets/cbc.png
-      slogan: 准备好改变您的开发方式了吗？
-      prompt: 开干吧各位
+    # - name: deepseek-v4-flash-vision-exp
+#       avatar:
+#         src: /assets/cbc.png
+#       slogan: 准备好改变您的开发方式了吗？
+#       prompt: 开干吧各位
     - name: glm-5.3
       avatar:
         src: /assets/cbc.png
