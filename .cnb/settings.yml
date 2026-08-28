@@ -1,7 +1,7 @@
 npc:
   defaultRole: deepseek-v4-flash
   roles:
-    - name: hy4-dev
+    - name: hy4-preview
       avatar:
         src: /assets/cbc.png
       slogan: 准备好改变您的开发方式了吗？

@@ -29,7 +29,7 @@ Comment in an Issue or PR:
 - `glm-5.3-flash`
 - `glm-5.2`
 - `kimi-k3`
-- `hy4-dev`
+- `hy4-preview`
 
 ## Resources
 
