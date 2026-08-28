@@ -31,6 +31,7 @@
 - `kimi-k3`
 - `minimax-m3`
 - `minimax-m2.7`
+- `hy4-dev`
 - `hy3`
 
 ## 相关资源
