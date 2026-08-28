@@ -49,7 +49,7 @@ glm-5.3-flash: *1m
 glm-5.2: *1m
 kimi-k3: *200k
 minimax-m3: *200k
-minimax-m2.7: *200k
+# minimax-m2.7: *200k
 
 hy4-dev: *1m
 hy3: *200k

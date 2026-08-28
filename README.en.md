@@ -30,7 +30,7 @@ Comment in an Issue or PR:
 - `glm-5.2`
 - `kimi-k3`
 - `minimax-m3`
-- `minimax-m2.7`
+# - `minimax-m2.7`
 - `hy4-dev`
 - `hy3`
 
