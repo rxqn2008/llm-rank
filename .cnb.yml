@@ -1,4 +1,4 @@
-.1m-high: &1m-high
+.1m: &1m
   issue.comment@npc:
     - docker:
         image: cnbcool/default-npc:latest
@@ -21,16 +21,16 @@
           contextWindow: 1m
           thinkingLevel: high
 
-deepseek-v4-pro: *1m-high
-deepseek-v4-flash: *1m-high
-# deepseek-v4-flash-vision-exp: *1m-high
+deepseek-v4-pro: *1m
+deepseek-v4-flash: *1m
+# deepseek-v4-flash-vision-exp: *1m
 
-glm-5.3: *1m-high
-glm-5.3-flash: *1m-high
-glm-5.2: *1m-high
-kimi-k3: *1m-high
+glm-5.3: *1m
+glm-5.3-flash: *1m
+glm-5.2: *1m
+kimi-k3: *1m
 
-hy4-preview: *1m-high
+hy4-preview: *1m
 
 main:
   pull_request:
