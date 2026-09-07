@@ -3,23 +3,43 @@
     - docker:
         image: cnbcool/default-npc:latest
       stages:
+      - name: set model
+        script: |
+          if [ "$CNB_NPC_NAME" = "hy4-preview" ]; then
+            echo "##[set-output NPC_THINKING=high]"
+          else
+            echo "##[set-output NPC_THINKING=medium]"
+          fi
+        exports:
+          NPC_THINKING: NPC_THINKING
       - name: run with npc
         type: npc:go
         options:
           model: ${CNB_NPC_NAME}
           contextWindow: 1m
-          thinkingLevel: high
+          thinkingLevel: $NPC_THINKING
 
   pull_request.comment@npc:
     - docker:
         image: cnbcool/default-npc:latest
       stages:
+      - name: set model
+        script: |
+          if [ "$CNB_NPC_NAME" = "hy4-preview" ]; then
+            echo "##[set-output NPC_THINKING=high]"
+          else
+            echo "##[set-output NPC_THINKING=medium]"
+          fi
+        exports:
+          NPC_THINKING: NPC_THINKING
       - name: run with npc
         type: npc:go
         options:
           model: ${CNB_NPC_NAME}
           contextWindow: 1m
-          thinkingLevel: high
+          thinkingLevel: $NPC_THINKING
+
+hy4-preview: *1m
 
 deepseek-v4-pro: *1m
 deepseek-v4-flash: *1m
@@ -29,8 +49,6 @@ glm-5.3: *1m
 glm-5.3-flash: *1m
 glm-5.2: *1m
 kimi-k3: *1m
-
-hy4-preview: *1m
 
 main:
   pull_request:
