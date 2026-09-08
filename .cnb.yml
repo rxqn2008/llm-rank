@@ -7,6 +7,8 @@
         script: |
           if [ "$CNB_NPC_NAME" = "hy4-preview" ]; then
             echo "##[set-output NPC_THINKING=high]"
+          elif [ "$CNB_NPC_NAME" = "deepseek-v4-flash" ] || [ "$CNB_NPC_NAME" = "deepseek-v4-flash-version" ]; then
+            echo "##[set-output NPC_THINKING=off]"
           else
             echo "##[set-output NPC_THINKING=medium]"
           fi
@@ -34,6 +36,8 @@
         script: |
           if [ "$CNB_NPC_NAME" = "hy4-preview" ]; then
             echo "##[set-output NPC_THINKING=high]"
+          elif [ "$CNB_NPC_NAME" = "deepseek-v4-flash" ] || [ "$CNB_NPC_NAME" = "deepseek-v4-flash-version" ]; then
+            echo "##[set-output NPC_THINKING=off]"
           else
             echo "##[set-output NPC_THINKING=medium]"
           fi
