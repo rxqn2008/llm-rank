@@ -24,6 +24,7 @@
 
 - `deepseek-v4-pro`
 - `deepseek-v4-flash`
+- `deepseek-v4-flash-version`
 - `glm-5.3`
 - `glm-5.3-flash`
 - `glm-5.2`

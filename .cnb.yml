@@ -10,14 +10,21 @@
           else
             echo "##[set-output NPC_THINKING=medium]"
           fi
+          if [ "$CNB_NPC_NAME" = "deepseek-v4-flash-version" ] || [ "$CNB_NPC_NAME" = "glm-5.3-flash" ]; then
+            echo "##[set-output NPC_SUPPORT_IMAGE=true]"
+          else
+            echo "##[set-output NPC_SUPPORT_IMAGE=false]"
+          fi
         exports:
           NPC_THINKING: NPC_THINKING
+          NPC_SUPPORT_IMAGE: NPC_SUPPORT_IMAGE
       - name: run with npc
         type: npc:go
         options:
           model: ${CNB_NPC_NAME}
           contextWindow: 1m
           thinkingLevel: $NPC_THINKING
+          supportImage: $NPC_SUPPORT_IMAGE
 
   pull_request.comment@npc:
     - docker:
@@ -30,19 +37,27 @@
           else
             echo "##[set-output NPC_THINKING=medium]"
           fi
+          if [ "$CNB_NPC_NAME" = "deepseek-v4-flash-version" ] || [ "$CNB_NPC_NAME" = "glm-5.3-flash" ]; then
+            echo "##[set-output NPC_SUPPORT_IMAGE=true]"
+          else
+            echo "##[set-output NPC_SUPPORT_IMAGE=false]"
+          fi
         exports:
           NPC_THINKING: NPC_THINKING
+          NPC_SUPPORT_IMAGE: NPC_SUPPORT_IMAGE
       - name: run with npc
         type: npc:go
         options:
           model: ${CNB_NPC_NAME}
           contextWindow: 1m
           thinkingLevel: $NPC_THINKING
+          supportImage: $NPC_SUPPORT_IMAGE
 
 hy4-preview: *1m
 
 deepseek-v4-pro: *1m
 deepseek-v4-flash: *1m
+deepseek-v4-flash-version: *1m
 # deepseek-v4-flash-vision-exp: *1m
 
 glm-5.3: *1m
