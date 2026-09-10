@@ -7,12 +7,12 @@
         script: |
           if [ "$CNB_NPC_NAME" = "hy4-preview" ]; then
             echo "##[set-output NPC_THINKING=high]"
-          elif [ "$CNB_NPC_NAME" = "deepseek-v4-flash" ] || [ "$CNB_NPC_NAME" = "deepseek-v4-flash-version" ]; then
+          elif [ "$CNB_NPC_NAME" = "deepseek-v4-flash" ] || [ "$CNB_NPC_NAME" = "deepseek-v4-flash-version" ] || [ "$CNB_NPC_NAME" = "deepseek-v4.1-flash" ]; then
             echo "##[set-output NPC_THINKING=off]"
           else
             echo "##[set-output NPC_THINKING=medium]"
           fi
-          if [ "$CNB_NPC_NAME" = "deepseek-v4-flash-version" ] || [ "$CNB_NPC_NAME" = "glm-5.3-flash" ]; then
+          if [ "$CNB_NPC_NAME" = "deepseek-v4-flash-version" ] || [ "$CNB_NPC_NAME" = "deepseek-v4.1-flash" ] || [ "$CNB_NPC_NAME" = "glm-5.3-flash" ]; then
             echo "##[set-output NPC_SUPPORT_IMAGE=true]"
           else
             echo "##[set-output NPC_SUPPORT_IMAGE=false]"
@@ -36,12 +36,12 @@
         script: |
           if [ "$CNB_NPC_NAME" = "hy4-preview" ]; then
             echo "##[set-output NPC_THINKING=high]"
-          elif [ "$CNB_NPC_NAME" = "deepseek-v4-flash" ] || [ "$CNB_NPC_NAME" = "deepseek-v4-flash-version" ]; then
+          elif [ "$CNB_NPC_NAME" = "deepseek-v4-flash" ] || [ "$CNB_NPC_NAME" = "deepseek-v4-flash-version" ] || [ "$CNB_NPC_NAME" = "deepseek-v4.1-flash" ]; then
             echo "##[set-output NPC_THINKING=off]"
           else
             echo "##[set-output NPC_THINKING=medium]"
           fi
-          if [ "$CNB_NPC_NAME" = "deepseek-v4-flash-version" ] || [ "$CNB_NPC_NAME" = "glm-5.3-flash" ]; then
+          if [ "$CNB_NPC_NAME" = "deepseek-v4-flash-version" ] || [ "$CNB_NPC_NAME" = "deepseek-v4.1-flash" ] || [ "$CNB_NPC_NAME" = "glm-5.3-flash" ]; then
             echo "##[set-output NPC_SUPPORT_IMAGE=true]"
           else
             echo "##[set-output NPC_SUPPORT_IMAGE=false]"
@@ -62,6 +62,7 @@ hy4-preview: *1m
 deepseek-v4-pro: *1m
 deepseek-v4-flash: *1m
 deepseek-v4-flash-version: *1m
+deepseek-v4.1-flash: *1m
 # deepseek-v4-flash-vision-exp: *1m
 
 glm-5.3: *1m
