@@ -22,9 +22,6 @@
 
 ## 支持模型
 
-- `deepseek-v4-pro`
-- `deepseek-v4-flash`
-- `deepseek-v4-flash-version`
 - `deepseek-v4.1-flash`
 - `glm-5.3`
 - `glm-5.3-flash`
