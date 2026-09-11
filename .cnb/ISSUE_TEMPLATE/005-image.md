@@ -1,7 +1,7 @@
 ---
-name: NPC 体验专用 NPC 识别图片
+name: 体验专用 NPC 识别图片
 about: NPC 识别图片
-title: "NPC 体验专用 NPC 识别图片"
+title: "体验专用 NPC 识别图片"
 labels: 识别图片
 ---
 @CodeBuddy 为我介绍这个图片

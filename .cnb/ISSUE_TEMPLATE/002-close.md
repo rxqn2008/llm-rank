@@ -1,7 +1,7 @@
 ---
-name: NPC 体验专用 NPC 妲己在线关单
+name: 体验专用 NPC 妲己在线关单
 about: 演示 NPC 妲己识别已完成任务，自主关闭 Issue，创建 Issue 后自动开工
-title: "NPC 体验专用 NPC 妲己在线关单"
+title: "体验专用 NPC 妲己在线关单"
 labels: 关单
 ---
 @npc/hok(妲己) 请基于下面的需求完成分析，确认任务已完成后将本 Issue 关闭，并把处理结论评论回 ISSUE 中。
