@@ -1,7 +1,7 @@
 ---
 name: NPC 自我介绍
 about: 演示 NPC 基于仓库上下文完成自我介绍，创建 Issue 后自动开工
-title: "NPC 自我介绍"
+title: "NPC 体验专用 NPC 自我介绍"
 labels: 自我介绍
 ---
 @CodeBuddy 请基于本仓库的上下文，产出一份自我介绍，用于向刚接触本仓库的同事说明你是谁、能做什么、怎么用。
