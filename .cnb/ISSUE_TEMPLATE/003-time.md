@@ -1,5 +1,5 @@
 ---
-name: NPC 今夕是何年
+name: NPC 体验专用 NPC 今夕是何年
 about: 演示 NPC 读取当前时间与仓库上下文，创建 Issue 后自动开工
 title: "NPC 体验专用 NPC 今夕是何年"
 labels: 时间

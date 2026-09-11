@@ -1,5 +1,5 @@
 ---
-name: NPC 妲己在线关单
+name: NPC 体验专用 NPC 妲己在线关单
 about: 演示 NPC 妲己识别已完成任务，自主关闭 Issue，创建 Issue 后自动开工
 title: "NPC 体验专用 NPC 妲己在线关单"
 labels: 关单
