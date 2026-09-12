@@ -28,8 +28,11 @@ llm-rank/
 │   └── js/app.js                 # 渲染逻辑：排行 / 趋势图 / 场景 / 明细
 ├── data/models.json              # 数据快照（含 30 天历史）
 ├── scripts/update-data.mjs       # 数据更新脚本（Node 18+，无依赖）
+├── DEPLOY-GITHUB.md              # 部署到 GitHub 的完整操作手册
 ├── .cnb.daily-update.yml         # CNB 每日更新流水线（可合并进根 .cnb.yml）
-└── .github/workflows/update-data.yml  # GitHub Actions 每日更新
+└── .github/workflows/
+    ├── deploy-pages.yml          # 部署到 GitHub Pages
+    └── update-data.yml           # GitHub Actions 每日更新
 ```
 
 ## 本地预览
@@ -94,6 +97,20 @@ main:
 **方式二：GitHub Actions**
 
 `.github/workflows/update-data.yml` 已配置每天 00:17 UTC 自动运行，也可在 Actions 页面手动触发。
+
+## 部署到 GitHub
+
+完整操作步骤见 [DEPLOY-GITHUB.md](./DEPLOY-GITHUB.md)，简要流程：
+
+1. **准备凭据**：GitHub Personal Access Token（勾选 `repo`、`workflow`）或 `gh auth login`
+2. **创建仓库**：`gh repo create <用户名>/llm-rank --public`
+3. **推送代码**：`git remote add github https://github.com/<用户名>/llm-rank.git && git push github main`
+4. **启用 Pages**：Settings → Pages → Source 选择 **GitHub Actions**，等待部署完成
+5. **访问站点**：`https://<用户名>.github.io/llm-rank/`
+
+推送 `llm-rank/**` 变更会自动触发 `deploy-pages.yml` 重新发布；`update-data.yml` 每天 00:17 UTC 自动刷新数据。
+
+> ⚠️ 若 GitHub 与 CNB 同时开启定时更新，建议只保留一条更新链路，避免两地写入同一数据文件造成推送冲突。
 
 ## 数据字段说明
 
