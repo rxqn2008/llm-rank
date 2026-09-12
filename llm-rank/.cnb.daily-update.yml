@@ -19,7 +19,7 @@ main:
           script: |
             git config user.name "cnb-npc[bot]"
             git config user.email "cnb-npc@noreply.cnb.cool"
-            git add llm-rank/data/models.json
+            git add llm-rank/data/models.json llm-rank/data/watchlist.json
             if git diff --staged --quiet; then
               echo "数据无变化，跳过提交"
             else

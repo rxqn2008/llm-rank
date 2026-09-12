@@ -18,6 +18,7 @@
     <nav class="nav">
       <a href="#trend">热度趋势</a>
       <a href="#ranking">排行榜</a>
+      <a href="#latest">最新发布</a>
       <a href="#scenes">适用场景</a>
       <a href="#detail">数据明细</a>
       <a href="#about">数据说明</a>
@@ -37,6 +38,7 @@
       <span class="badge">综合评分</span>
       <span class="badge">适用场景</span>
       <span class="badge">趋势对比</span>
+      <span class="badge">新模型发现</span>
     </div>
     <div class="stats" id="stats"></div>
     <p class="meta" id="load-error" style="display:none;color:#ff6b81;font-size:14px"></p>
@@ -70,6 +72,7 @@
       <select id="scene-filter" aria-label="按场景筛选"></select>
       <select id="sort" aria-label="排序方式">
         <option value="usage">按热度指数</option>
+        <option value="newest">按发布时间</option>
         <option value="score">按综合评分</option>
         <option value="winRate">按对战胜率</option>
         <option value="calls">按日均调用</option>
@@ -90,6 +93,14 @@
     <div class="rank-list" id="rank-list"></div>
   </section>
 
+  <section class="block" id="latest">
+    <div class="block-head">
+      <h2>🆕 最新发布</h2>
+      <div class="desc">按首次发布时间倒序，自动同步外部模型榜单</div>
+    </div>
+    <div class="latest-grid" id="latest-grid"></div>
+  </section>
+
   <section class="block" id="scenes">
     <div class="block-head">
       <h2>🎯 适用场景矩阵</h2>
@@ -107,7 +118,7 @@
       <table class="detail">
         <thead>
           <tr>
-            <th>排名</th><th>模型</th><th>厂商</th><th>热度指数</th><th>综合评分</th>
+            <th>排名</th><th>模型</th><th>厂商</th><th>发布时间</th><th>热度指数</th><th>综合评分</th>
             <th>对战胜率</th><th>上下文</th><th>参考价格</th><th>适用场景</th><th>一句话点评</th>
           </tr>
         </thead>
@@ -127,7 +138,8 @@
         <li><b>对战胜率</b>：在同场景双盲对比中获得更优评价的比例。</li>
         <li><b>日均调用量</b>：单位为亿次 / 天，为平台侧统计的估算值。</li>
         <li><b>参考价格</b>：每百万输入 token 的美元价格，仅作横向比较。</li>
-        <li><b>更新频率</b>：每天自动更新一次，保留最近 30 天快照用于趋势对比。</li>
+        <li><b>发布时间</b>：取自模型公开上线时间；外部榜单未提供的会留空。</li>
+        <li><b>更新频率</b>：每天自动更新一次，保留最近 30 天快照用于趋势对比；新模型会自动收录进榜单。</li>
       </ul>
       <p style="margin:14px 0 0;color:#6b7699;font-size:13px">
         数据来源：<span id="source-note">—</span>；更新时间：<span id="updated">—</span>。

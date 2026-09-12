@@ -34,14 +34,8 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: 站点自检（入口文件与数据完整性）
-        run: |
-          set -e
-          test -f llm-rank/index.html || { echo "缺少 llm-rank/index.html"; exit 1; }
-          test -f llm-rank/assets/css/style.css || { echo "缺少样式文件"; exit 1; }
-          test -f llm-rank/assets/js/app.js || { echo "缺少脚本文件"; exit 1; }
-          node -e "const d=require('./llm-rank/data/models.json');if(!Array.isArray(d.models)||!d.models.length){console.error('数据文件为空');process.exit(1)}console.log('数据快照日期:',d.snapshot,'模型数量:',d.models.length)"
-          echo "站点自检通过 ✅"
+      - name: 站点自检（入口文件、数据完整性、前端挂载点）
+        run: node llm-rank/scripts/check-site.mjs
 
       - name: 上传站点产物
         uses: actions/upload-pages-artifact@v3

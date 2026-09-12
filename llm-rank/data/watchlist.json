@@ -1,0 +1,27 @@
+{
+  "comment": "主榜单关注的大模型列表；data/models.json 只收录这里的模型，可自由增删（OpenRouter 的 id 或本地 id）",
+  "ids": [
+    "gpt-5-1",
+    "claude-sonnet-4-5",
+    "gemini-2-5-pro",
+    "deepseek-v3-2",
+    "glm-5-3",
+    "kimi-k3",
+    "qwen3-max",
+    "llama-4-405b",
+    "grok-4",
+    "doubao-pro-2-0",
+    "mistral-large-3",
+    "ernie-5-0",
+    "grok-4-mini",
+    "hunyuan-turbos",
+    "yi-large-2",
+    "command-r-2",
+    "schematron-v2-turbo",
+    "fugu-ultra-v2",
+    "ling-3-0-flash-vl",
+    "deepseek-v4-1-flash",
+    "mercury-2-5",
+    "nex-n2-5-mini-free"
+  ]
+}

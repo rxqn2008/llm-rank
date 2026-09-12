@@ -9,7 +9,27 @@
   const $ = (sel) => document.querySelector(sel);
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const fmt = (n, d = 1) => Number(n).toFixed(d);
+  const NEW_WINDOW_DAYS = 120;
+  const daysSince = (dateStr) => {
+    if (!dateStr) return Infinity;
+    const t = Date.parse(`${dateStr}T00:00:00Z`);
+    return Number.isNaN(t) ? Infinity : Math.floor((Date.now() - t) / 86400000);
+  };
+  const isNew = (m) => daysSince(m.releasedAt) <= NEW_WINDOW_DAYS;
+  const relTime = (dateStr) => {
+    const days = daysSince(dateStr);
+    if (!Number.isFinite(days)) return '';
+    if (days <= 0) return '今天发布';
+    if (days === 1) return '昨天发布';
+    if (days < 30) return `${days} 天前发布`;
+    if (days < 365) return `${Math.floor(days / 30)} 个月前发布`;
+    return `${Math.floor(days / 365)} 年前发布`;
+  };
   const num = (n) => Number(n).toLocaleString('zh-CN');
+  const newestOf = (models) =>
+    [...models]
+      .filter((m) => m.releasedAt)
+      .sort((a, b) => String(b.releasedAt).localeCompare(String(a.releasedAt)))[0];
 
   /* ---------------- 工具：历史数据 ---------------- */
   const historyMap = () => {
@@ -34,6 +54,7 @@
   /* ---------------- 概览指标 ---------------- */
   function renderStats() {
     const models = state.data.models;
+    const newest = newestOf(models);
     const avgScore = models.reduce((s, m) => s + m.score, 0) / (models.length || 1);
     const avgWin = models.reduce((s, m) => s + m.winRate, 0) / (models.length || 1);
     const topGainer = [...models].sort((a, b) => deltaOf(b.id) - deltaOf(a.id))[0];
@@ -44,6 +65,7 @@
       { k: '平均综合评分', v: fmt(avgScore, 1), u: '/100', s: `平均胜率 ${fmt(avgWin, 1)}%` },
       { k: '榜首模型', v: models[0]?.name?.split(' ')[0] || '—', u: '', s: `热度指数 ${fmt(models[0]?.usage ?? 0, 1)}` },
       { k: `近 ${state.trendDays} 天涨幅王`, v: topGainer ? topGainer.name.split(' ')[0] : '—', u: '', s: gain >= 0 ? `+${fmt(gain, 1)}%` : `${fmt(gain, 1)}%` },
+      { k: '最新发布', v: newest ? newest.name.split(' ')[0] : '—', u: '', s: newest ? `${newest.releasedAt}｜${relTime(newest.releasedAt)}` : '暂无发布时间数据' },
     ];
 
     $('#stats').innerHTML = cards
@@ -138,6 +160,39 @@
     });
   }
 
+  /* ---------------- 最新发布 ---------------- */
+  function renderLatest() {
+    const list = [...state.data.models]
+      .filter((m) => m.releasedAt)
+      .sort((a, b) => b.releasedAt.localeCompare(a.releasedAt))
+      .slice(0, 8);
+
+    if (!list.length) {
+      $('#latest-grid').innerHTML =
+        '<div class="empty-tip">暂无发布时间数据，联网更新后会自动展示（部分外部数据源不提供发布时间）</div>';
+      return;
+    }
+
+    $('#latest-grid').innerHTML = list
+      .map(
+        (m, i) => `<div class="latest-card${i === 0 ? ' fresh' : ''}">
+          <div class="latest-top">
+            <span class="latest-date">${esc(m.releasedAt)}</span>
+            ${isNew(m) ? '<span class="tag-new">NEW</span>' : ''}
+          </div>
+          <div class="latest-name">${esc(m.name)}</div>
+          <div class="latest-vendor">${esc(m.vendor)} · 榜单第 ${m.rank} 名</div>
+          <div class="latest-rel">${esc(relTime(m.releasedAt))}</div>
+          <div class="latest-meta">
+            <span class="score-pill ${scoreClass(m.score)}">评分 ${fmt(m.score, 1)}</span>
+            <span class="tag-scene">${num(m.context)}K 上下文</span>
+            <span class="tag-scene">$${fmt(m.price, 2)}/M</span>
+          </div>
+        </div>`,
+      )
+      .join('');
+  }
+
   /* ---------------- 排行列表 ---------------- */
   function scoreClass(v) {
     return v >= 85 ? '' : v >= 70 ? 'mid' : 'low';
@@ -163,6 +218,7 @@
       calls: (a, b) => b.calls - a.calls,
       trend: (a, b) => deltaOf(b.id) - deltaOf(a.id),
       value: (a, b) => b.usage / (b.price || 0.01) - a.usage / (a.price || 0.01),
+      newest: (a, b) => String(b.releasedAt || '').localeCompare(String(a.releasedAt || '')),
     }[state.sort];
     return list.sort(cmp);
   }
@@ -185,8 +241,8 @@
         return `<div class="rank-row">
           <div class="rank-no ${top3}">${m.rank}</div>
           <div>
-            <div class="m-name">${esc(m.name)}${m.price <= 0.5 ? '<span class="tag-scene">高性价比</span>' : ''}</div>
-            <div class="m-vendor">${esc(m.vendor)} · 上下文 ${num(m.context)}K</div>
+            <div class="m-name">${esc(m.name)}${isNew(m) ? '<span class="tag-new">NEW</span>' : ''}${m.price <= 0.5 ? '<span class="tag-scene">高性价比</span>' : ''}</div>
+            <div class="m-vendor">${esc(m.vendor)} · 上下文 ${num(m.context)}K${m.releasedAt ? ` · ${esc(m.releasedAt)} 发布` : ''}</div>
           </div>
           <div class="bar-wrap col-calls">
             <div class="bar"><i style="width:${Math.min(100, (m.calls / 12) * 100).toFixed(1)}%"></i></div>
@@ -246,6 +302,7 @@
           <td>${m.rank}</td>
           <td><b>${esc(m.name)}</b></td>
           <td>${esc(m.vendor)}</td>
+          <td class="cell-nowrap">${m.releasedAt ? esc(m.releasedAt) : '<span class="m-vendor">—</span>'}</td>
           <td>${fmt(m.usage, 1)}</td>
           <td>${fmt(m.score, 1)}</td>
           <td>${fmt(m.winRate, 1)}%</td>
@@ -255,7 +312,7 @@
           <td class="cell-wrap">${esc(m.summary)}</td>
         </tr>`,
       )
-      .join('') || '<tr><td colspan="10" class="empty-tip">没有匹配的模型</td></tr>';
+      .join('') || '<tr><td colspan="11" class="empty-tip">没有匹配的模型</td></tr>';
   }
 
   /* ---------------- 事件绑定 ---------------- */
@@ -298,12 +355,16 @@
     }
 
     const d = state.data;
-    $('#snapshot').textContent = `数据快照 ${d.snapshot}`;
+    const latest = newestOf(d.models);
+    $('#snapshot').textContent = latest
+      ? `数据快照 ${d.snapshot}｜最新 ${latest.name}`
+      : `数据快照 ${d.snapshot}`;
     $('#footer-meta').textContent = `数据快照：${d.snapshot}｜来源：${d.source}｜${d.sourceNote || ''}`;
     $('#source-note').textContent = d.sourceNote || '';
     if (d.updatedAt) $('#updated').textContent = new Date(d.updatedAt).toLocaleString('zh-CN');
 
     renderStats();
+    renderLatest();
     renderScenes();
     renderRank();
     renderTable();

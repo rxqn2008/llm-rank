@@ -93,10 +93,27 @@ main:
           script: |
             git config user.name "cnb-npc[bot]"
             git config user.email "cnb-npc@noreply.cnb.cool"
-            git add llm-rank/data/models.json
+            git add llm-rank/data/models.json llm-rank/data/watchlist.json
             if git diff --staged --quiet; then
               echo "数据无变化，跳过提交"
             else
               git commit -m "chore: 更新大模型热度数据 $(date -u +%F)"
               git push origin HEAD:main
             fi
+
+# 大模型热度排行站点：在 CNB 上一键起服务预览
+# 说明：CNB 不提供静态站点托管（类似 GitHub Pages）能力，原生可行的是
+#       通过「云原生开发·仅预览模式」在浏览器中打开站点进行访问与验收。
+$:
+  vscode:
+    - docker:
+        image: node:20
+      services:
+        - docker
+        - name: vscode
+          options:
+            onlyPreview: true
+            launch: node llm-rank/scripts/serve.mjs
+      stages:
+        - name: 站点自检
+          script: node llm-rank/scripts/check-site.mjs
