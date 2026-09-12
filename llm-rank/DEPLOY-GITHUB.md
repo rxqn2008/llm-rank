@@ -113,15 +113,22 @@ git push https://x-access-token:${GITHUB_TOKEN}@github.com/<你的用户名>/llm
 
 ---
 
-## 与 CNB 双线并行的建议
+## 与 CNB 的分工（已定：GitHub 主库）
 
-本站点当前已在 CNB 侧配置了每日更新流水线（根 `.cnb.yml` 的 `crontab: 20 8 * * *`）。
-如果同时启用 GitHub Actions 定时更新，两边会各写一份 `data/models.json`，建议二选一：
+**GitHub Actions 的 `schedule` 必须保留**，它是本站唯一的每日更新链路。
 
-- **方案 1（推荐）**：CNB 为主库，GitHub 作只读镜像/发布端，禁用 GitHub 侧的 `schedule`；
-- **方案 2**：GitHub 为主库，删除 CNB 侧的 `crontab` 节点。
+仓库已按「GitHub 主库」收敛：
 
-否则两边定时任务可能产生推送冲突（工作流已内置 `git pull --rebase --autostash` 缓解，但仍建议只保留一条链路）。
+- ✅ **保留** `.github/workflows/update-data.yml` 的 `schedule`（每天 00:17 UTC）——拉取数据、提交 `main`、触发 Pages 重新发布；
+- ✅ **已移除** CNB 侧根 `.cnb.yml` 的 `crontab` 节点——CNB 不再写 `data/models.json`；
+- ✅ CNB 侧只保留「云原生开发 · 仅预览模式」，用于内部点开验收。
+
+这么做是因为两处定时任务会各写一份 `llm-rank/data/models.json`，
+其中一个流水线会白跑（提交被覆盖）甚至推送冲突。
+工作流内仍保留 `git pull --rebase --autostash`，用于应对 `main` 被仓库其他改动（含 CNB 侧人工推送）改写的情况。
+
+> 🔁 **想切回 CNB 主库？** 先删除本文件的 `schedule` 触发，再把 `llm-rank/.cnb.daily-update.yml`
+> 的 `main` 节点合并回根 `.cnb.yml`，恢复 `crontab: 20 8 * * *`。
 
 ---
 

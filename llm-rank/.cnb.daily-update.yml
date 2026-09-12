@@ -1,8 +1,13 @@
-# 大模型热度数据 · 每日自动更新流水线
+# 大模型热度数据 · CNB 定时更新流水线（备用方案，默认停用）
 #
-# 使用方式（二选一）：
-#   1）把下面的 main 节点内容合并进仓库根目录 .cnb.yml
-#   2）如需单独维护，在 .cnb.yml 中用 !reference / include 引入本文件
+# ⚠️ 当前更新链路以 GitHub 为主库，本文件默认**不生效**：
+#    仓库根 .cnb.yml 中的 crontab 节点已移除，由 GitHub Actions
+#    (.github/workflows/update-data.yml，每天 00:17 UTC) 负责拉取数据并提交。
+#
+# 本文件保留作为「切换回 CNB 主库」的备用配置，使用步骤：
+#   1）删除（或注释）GitHub 侧 .github/workflows/update-data.yml 的 schedule 触发
+#   2）把下面的 main 节点内容合并进仓库根目录 .cnb.yml
+#   3）在 GitHub 仓库配置里同步 CNB 最新数据（或让 GitHub 只做纯发布端）
 #
 # 触发：定时触发，每天 08:20（北京时间）自动拉取数据并提交
 # 说明：外部数据源不可用时，脚本会回退到离线演算，保证站点每天都有更新

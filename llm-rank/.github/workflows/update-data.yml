@@ -1,5 +1,7 @@
 name: 每日更新大模型热度数据
 
+# 本仓库的**唯一**更新链路：定时拉取数据 → 提交 main → 触发 Pages 重新发布。
+# CNB 侧（根 .cnb.yml）已移除同类 crontab，避免两处同时写 llm-rank/data/models.json。
 on:
   schedule:
     # 每天 00:17 UTC（北京时间 08:17）更新一次
@@ -40,7 +42,8 @@ jobs:
             echo "数据无变化，跳过提交"
           else
             git commit -m "chore: 更新大模型热度数据 $(date -u +%F)"
-            # 目标仓库可能是从 CNB 同步过来的镜像，main 期间被改写时先 rebase 再推送
+            # 数据更新链路以 GitHub 为主库，但 main 仍可能被仓库其他改动（含 CNB 侧推送）改写，
+            # 推送前先 rebase 再接上，避免 non-fast-forward 直接失败
             git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}" || true
             git push
           fi

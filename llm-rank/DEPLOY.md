@@ -46,6 +46,9 @@ $:
 
 ### 需要留意的地方
 
+> 说明：CNB 侧**不再配置定时更新**（根 `.cnb.yml` 的 `crontab` 已移除），
+> 预览页展示的是仓库里的数据快照，由 GitHub Actions 每天更新后提交到 `main`。
+
 | 事项 | 说明 |
 | --- | --- |
 | 地址性质 | 预览地址是**临时开发环境地址**，环境回收后失效，不是长期稳定的公网域名 |
@@ -95,7 +98,8 @@ PORT=8080 node llm-rank/scripts/serve.mjs  # 换端口
 | 地址稳定性 | 临时环境地址，回收即失效 | 长期稳定 `https://<用户>.github.io/llm-rank/` |
 | 适用场景 | 内部验收、随手点开看 | 对外发布、分享给他人 |
 | 需要凭据 | 不需要（仓库权限即可） | 需要 GitHub Token / SSH Key |
-| 自动更新 | CNB `crontab` 每天 08:20 更新数据并提交 | GitHub Actions 每天 00:17 UTC 更新 + 自动重新发布 |
+| 自动更新 | 不再承担数据更新（`crontab` 已移除） | **唯一更新链路**：每天 00:17 UTC 更新数据并自动重新发布 |
 
-> 建议：**CNB 侧当主库负责数据更新，GitHub Pages 当发布渠道**。
-> 若两边同时开定时更新会写同一份 `data/models.json`，请只保留一条更新链路（详见 [DEPLOY-GITHUB.md](./DEPLOY-GITHUB.md)）。
+> 当前分工：**GitHub 负责数据更新 + Pages 发布，CNB 只做内部预览验收**。
+> 两条路线若同时开定时更新会写同一份 `data/models.json`，因此 CNB 侧 `crontab` 已移除，
+> 只保留一条更新链路（详见 [DEPLOY-GITHUB.md](./DEPLOY-GITHUB.md)）。

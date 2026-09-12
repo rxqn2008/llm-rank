@@ -10,7 +10,7 @@
 - **搜索与筛选**：支持按模型名、厂商、场景关键词检索，支持场景下拉筛选
 - **数据明细表**：评分、胜率、上下文长度、参考价格、适用场景、一句话点评
 - **最新发布**：基于外部榜单的真实发布时间，按时间倒序展示新模型，自动识别 120 天内的新面孔
-- **每日自动更新**：定时流水线每天刷新数据快照，保留最近 30 天历史，并自动收录外部榜单里的新模型
+- **每日自动更新**：GitHub Actions 每天刷新数据快照，保留最近 30 天历史，并自动收录外部榜单里的新模型
 - **响应式设计**：桌面端、平板、手机端自适应，支持 `prefers-reduced-motion`
 
 ## 技术栈
@@ -33,10 +33,10 @@ llm-rank/
 ├── data/watchlist.json           # 主榜单关注的大模型列表（可自由增删）
 ├── DEPLOY.md                     # 部署与访问指南（CNB 原生方式 / GitHub Pages 对比）
 ├── DEPLOY-GITHUB.md              # 部署到 GitHub 的完整操作手册
-├── .cnb.daily-update.yml         # CNB 每日更新流水线（可合并进根 .cnb.yml）
+├── .cnb.daily-update.yml         # CNB 每日更新流水线（备用方案，默认停用，可合并进根 .cnb.yml）
 └── .github/workflows/
     ├── deploy-pages.yml          # 部署到 GitHub Pages
-    └── update-data.yml           # GitHub Actions 每日更新
+    └── update-data.yml           # GitHub Actions 每日更新（当前唯一更新链路）
 ```
 
 ## 本地预览
@@ -98,31 +98,22 @@ node llm-rank/scripts/update-data.mjs --offline  # 强制离线演算（本地�
 
 ### 定时自动更新
 
-**方式一：CNB 流水线（推荐）**
+更新链路**只保留一条，以 GitHub 为主库**：
 
-把 `llm-rank/.cnb.daily-update.yml` 中的 `main` 节点合并到仓库根目录 `.cnb.yml`，即可每天 08:20（北京时间）自动更新并提交数据：
+**GitHub Actions（当前生效）**
 
-```yaml
-main:
-  "crontab: 20 8 * * *":
-    - stages:
-        - name: 更新大模型热度数据
-          image: node:20
-          script: |
-            node llm-rank/scripts/update-data.mjs
-        - name: 提交数据变更
-          image: cnbcool/git:latest
-          script: |
-            git config user.name "cnb-npc[bot]"
-            git config user.email "cnb-npc@noreply.cnb.cool"
-            git add llm-rank/data/models.json
-            git diff --staged --quiet || git commit -m "chore: 更新大模型热度数据 $(date -u +%F)"
-            git push origin HEAD:main
-```
+`.github/workflows/update-data.yml` 每天 **00:17 UTC（北京时间 08:17）** 自动拉取数据、提交到 `main`，
+提交会命中 `deploy-pages.yml` 的 `paths` 规则，从而自动重新发布 Pages。
+也可在 Actions 页面手动触发（Run workflow）。
 
-**方式二：GitHub Actions**
+**CNB 流水线（备用，默认停用）**
 
-`.github/workflows/update-data.yml` 已配置每天 00:17 UTC 自动运行，也可在 Actions 页面手动触发。
+`llm-rank/.cnb.daily-update.yml` 保留为备用配置，但**仓库根 `.cnb.yml` 中的 `crontab` 节点已移除**，
+因此 CNB 侧不会再写 `data/models.json`。
+需要切换回「CNB 主库」时：先停掉 GitHub 侧的 `schedule`，再把该文件里的 `main` 节点合并回根 `.cnb.yml`。
+
+> ⚠️ **不要两边同时开定时任务**：两处都会写同一份 `llm-rank/data/models.json`，
+> 造成其中一个流水线白跑（提交被覆盖）甚至推送冲突。
 
 ## 在 CNB 上直接访问
 
@@ -148,7 +139,8 @@ CNB 不提供静态站点托管能力，但可以用**云原生开发 · 仅预�
 
 推送 `llm-rank/**` 变更会自动触发 `deploy-pages.yml` 重新发布；`update-data.yml` 每天 00:17 UTC 自动刷新数据。
 
-> ⚠️ 若 GitHub 与 CNB 同时开启定时更新，建议只保留一条更新链路，避免两地写入同一数据文件造成推送冲突。
+> ✅ **更新链路已收敛为一条**：GitHub Actions 负责每日更新数据并提交 `main`，
+> CNB 侧的 `crontab` 已移除，CNB 仅保留「云原生开发 · 仅预览模式」用于内部验收。
 
 ## 数据字段说明
 
