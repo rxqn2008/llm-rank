@@ -1,0 +1,2444 @@
+{
+  "snapshot": "2026-09-12",
+  "updatedAt": "2026-09-12T13:11:24.351Z",
+  "source": "seed-evolve",
+  "sourceNote": "离线演算数据（未连通外部数据源），用于保证站点每日仍有更新",
+  "modelCount": 16,
+  "models": [
+    {
+      "id": "gpt-5-1",
+      "name": "GPT-5.1",
+      "vendor": "OpenAI",
+      "usage": 95.7,
+      "score": 92,
+      "winRate": 86.4,
+      "calls": 9.2,
+      "context": 128,
+      "price": 4.2,
+      "scenarios": [
+        "通用对话",
+        "代码生成",
+        "复杂推理",
+        "Agent 工具调用",
+        "多模态理解",
+        "代码重构"
+      ],
+      "summary": "综合能力最强，生态与工具链成熟，适合高端推理与复杂 Agent 任务。",
+      "homepage": "https://openai.com",
+      "rank": 1,
+      "share": 7.37
+    },
+    {
+      "id": "claude-sonnet-4-5",
+      "name": "Claude Sonnet 4.5",
+      "vendor": "Anthropic",
+      "usage": 92.1,
+      "score": 94,
+      "winRate": 84.1,
+      "calls": 8.6,
+      "context": 200,
+      "price": 3.8,
+      "scenarios": [
+        "长文写作",
+        "代码重构",
+        "法律合规",
+        "代码生成",
+        "Agent 工具调用",
+        "超长文档"
+      ],
+      "summary": "长上下文与代码理解突出，输出风格稳健，适合文档与工程类场景。",
+      "homepage": "https://anthropic.com",
+      "rank": 2,
+      "share": 7.09
+    },
+    {
+      "id": "gemini-2-5-pro",
+      "name": "Gemini 2.5 Pro",
+      "vendor": "Google DeepMind",
+      "usage": 88.7,
+      "score": 91,
+      "winRate": 82.7,
+      "calls": 7.4,
+      "context": 1000,
+      "price": 3.6,
+      "scenarios": [
+        "多模态理解",
+        "视频理解",
+        "复杂推理",
+        "超长文档",
+        "代码生成",
+        "通用对话"
+      ],
+      "summary": "原生多模态与超长上下文，适合视频、图文混排与科研资料分析。",
+      "homepage": "https://deepmind.google",
+      "rank": 3,
+      "share": 6.83
+    },
+    {
+      "id": "deepseek-v3-2",
+      "name": "DeepSeek-V3.2",
+      "vendor": "DeepSeek",
+      "usage": 87.2,
+      "score": 89,
+      "winRate": 90.3,
+      "calls": 11.8,
+      "context": 128,
+      "price": 0.42,
+      "scenarios": [
+        "复杂推理",
+        "数学求解",
+        "代码生成",
+        "私有化部署",
+        "中文创作",
+        "高并发低成本"
+      ],
+      "summary": "中文能力与性价比双优，开源权重适合私有化与高并发调用。",
+      "homepage": "https://deepseek.com",
+      "rank": 4,
+      "share": 6.72
+    },
+    {
+      "id": "glm-5-3",
+      "name": "GLM-5.3",
+      "vendor": "智谱 AI",
+      "usage": 86.8,
+      "score": 87,
+      "winRate": 74.2,
+      "calls": 5.8,
+      "context": 128,
+      "price": 0.36,
+      "scenarios": [
+        "通用对话",
+        "中文创作",
+        "企业知识库",
+        "代码生成",
+        "私有化部署",
+        "高并发低成本"
+      ],
+      "summary": "国产化适配好，中文问答与私有化知识库场景表现稳定。",
+      "homepage": "https://zhipuai.cn",
+      "rank": 5,
+      "share": 6.69
+    },
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3",
+      "vendor": "月之暗面",
+      "usage": 86.2,
+      "score": 88,
+      "winRate": 79.5,
+      "calls": 6.9,
+      "context": 256,
+      "price": 0.55,
+      "scenarios": [
+        "超长文档",
+        "实时检索",
+        "企业知识库",
+        "长文写作",
+        "教育辅导",
+        "中文创作"
+      ],
+      "summary": "超长文本处理见长，适合论文、合同、会议记录等资料密集型任务。",
+      "homepage": "https://moonshot.cn",
+      "rank": 6,
+      "share": 6.64
+    },
+    {
+      "id": "qwen3-max",
+      "name": "Qwen3-Max",
+      "vendor": "阿里云通义",
+      "usage": 85.8,
+      "score": 90,
+      "winRate": 88.9,
+      "calls": 10.4,
+      "context": 256,
+      "price": 0.6,
+      "scenarios": [
+        "中文创作",
+        "长文写作",
+        "多语言翻译",
+        "Agent 工具调用",
+        "代码生成",
+        "企业知识库"
+      ],
+      "summary": "中文场景覆盖广，工具调用与多语言表现均衡，企业落地成熟。",
+      "homepage": "https://tongyi.aliyun.com",
+      "rank": 7,
+      "share": 6.61
+    },
+    {
+      "id": "llama-4-405b",
+      "name": "Llama 4 405B",
+      "vendor": "Meta",
+      "usage": 85.5,
+      "score": 85,
+      "winRate": 71.6,
+      "calls": 5.2,
+      "context": 128,
+      "price": 0.28,
+      "scenarios": [
+        "开源微调",
+        "私有化部署",
+        "多语言翻译",
+        "通用对话",
+        "高并发低成本",
+        "代码生成"
+      ],
+      "summary": "开源生态最活跃，适合二次微调与本地化部署。",
+      "homepage": "https://ai.meta.com",
+      "rank": 8,
+      "share": 6.59
+    },
+    {
+      "id": "grok-4",
+      "name": "Grok 4",
+      "vendor": "xAI",
+      "usage": 82.5,
+      "score": 83,
+      "winRate": 68.4,
+      "calls": 4.7,
+      "context": 128,
+      "price": 1.1,
+      "scenarios": [
+        "实时检索",
+        "通用对话",
+        "游戏与社交",
+        "复杂推理",
+        "长文写作"
+      ],
+      "summary": "接入实时信息流，擅长热点追踪与个性化风格对话。",
+      "homepage": "https://x.ai",
+      "rank": 9,
+      "share": 6.35
+    },
+    {
+      "id": "doubao-pro-2-0",
+      "name": "Doubao-Pro 2.0",
+      "vendor": "字节跳动",
+      "usage": 79.3,
+      "score": 86,
+      "winRate": 83.2,
+      "calls": 9.6,
+      "context": 256,
+      "price": 0.3,
+      "scenarios": [
+        "长文写作",
+        "中文创作",
+        "通用对话",
+        "多模态理解",
+        "游戏与社交",
+        "高并发低成本"
+      ],
+      "summary": "内容创作与语音交互强，C 端产品集成度高。",
+      "homepage": "https://volcengine.com",
+      "rank": 10,
+      "share": 6.11
+    },
+    {
+      "id": "mistral-large-3",
+      "name": "Mistral Large 3",
+      "vendor": "Mistral AI",
+      "usage": 74.6,
+      "score": 82,
+      "winRate": 52.7,
+      "calls": 2.9,
+      "context": 128,
+      "price": 0.45,
+      "scenarios": [
+        "多语言翻译",
+        "私有化部署",
+        "企业知识库",
+        "Agent 工具调用",
+        "法律合规",
+        "高并发低成本"
+      ],
+      "summary": "欧盟合规友好，多语言与函数调用能力扎实。",
+      "homepage": "https://mistral.ai",
+      "rank": 11,
+      "share": 5.75
+    },
+    {
+      "id": "ernie-5-0",
+      "name": "ERNIE 5.0",
+      "vendor": "百度文心",
+      "usage": 73.6,
+      "score": 84,
+      "winRate": 66.1,
+      "calls": 4.4,
+      "context": 128,
+      "price": 0.4,
+      "scenarios": [
+        "实时检索",
+        "企业知识库",
+        "中文创作",
+        "法律合规",
+        "教育辅导",
+        "通用对话"
+      ],
+      "summary": "检索增强与中文语义理解成熟，搜索类场景优势明显。",
+      "homepage": "https://yiyan.baidu.com",
+      "rank": 12,
+      "share": 5.67
+    },
+    {
+      "id": "grok-4-mini",
+      "name": "Grok 4 mini",
+      "vendor": "xAI",
+      "usage": 73.3,
+      "score": 79,
+      "winRate": 55.3,
+      "calls": 3.1,
+      "context": 128,
+      "price": 0.2,
+      "scenarios": [
+        "高并发低成本",
+        "通用对话",
+        "实时检索",
+        "私有化部署"
+      ],
+      "summary": "轻量高效，适合高并发低成本场景。",
+      "homepage": "https://x.ai",
+      "rank": 13,
+      "share": 5.65
+    },
+    {
+      "id": "hunyuan-turbos",
+      "name": "Hunyuan-TurboS",
+      "vendor": "腾讯混元",
+      "usage": 72.9,
+      "score": 81,
+      "winRate": 61.8,
+      "calls": 4,
+      "context": 128,
+      "price": 0.33,
+      "scenarios": [
+        "游戏与社交",
+        "中文创作",
+        "长文写作",
+        "代码生成",
+        "多模态理解",
+        "高并发低成本"
+      ],
+      "summary": "游戏与社交内容场景积累深，接入微信生态便利。",
+      "homepage": "https://hunyuan.tencent.com",
+      "rank": 14,
+      "share": 5.62
+    },
+    {
+      "id": "yi-large-2",
+      "name": "Yi-Large 2",
+      "vendor": "零一万物",
+      "usage": 68.2,
+      "score": 78,
+      "winRate": 42.6,
+      "calls": 2.4,
+      "context": 200,
+      "price": 0.25,
+      "scenarios": [
+        "多语言翻译",
+        "开源微调",
+        "超长文档",
+        "中文创作",
+        "高并发低成本"
+      ],
+      "summary": "双语均衡、开源友好，适合中小团队自建。",
+      "homepage": "https://01.ai",
+      "rank": 15,
+      "share": 5.25
+    },
+    {
+      "id": "command-r-2",
+      "name": "Command R+ 2",
+      "vendor": "Cohere",
+      "usage": 65.7,
+      "score": 77,
+      "winRate": 39.4,
+      "calls": 2.1,
+      "context": 128,
+      "price": 0.5,
+      "scenarios": [
+        "企业知识库",
+        "实时检索",
+        "多语言翻译",
+        "私有化部署",
+        "法律合规"
+      ],
+      "summary": "面向 RAG 与企业搜索场景优化，检索引用规范。",
+      "homepage": "https://cohere.com",
+      "rank": 16,
+      "share": 5.06
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-08-14",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 91.58
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 88.91
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 86.98
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 87.22
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 88.22
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 87.36
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 86.29
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 85.75
+        },
+        {
+          "id": "grok-4",
+          "heat": 85.27
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 85.66
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 81.89
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 81.22
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 79.65
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 79.35
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 77.73
+        },
+        {
+          "id": "command-r-2",
+          "heat": 78.05
+        }
+      ]
+    },
+    {
+      "date": "2026-08-15",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 89.36
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 87.14
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 84.4
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 83.56
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 84.34
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 84.19
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 83.79
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 83.04
+        },
+        {
+          "id": "grok-4",
+          "heat": 81.81
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 81.89
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 78.64
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 78.63
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 76.91
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 75.67
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 73.33
+        },
+        {
+          "id": "command-r-2",
+          "heat": 74.08
+        }
+      ]
+    },
+    {
+      "date": "2026-08-16",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 89.56
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 88.48
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 85.65
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 83.69
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 83.59
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 83.64
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 84.11
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 83.79
+        },
+        {
+          "id": "grok-4",
+          "heat": 82.08
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 81.43
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 78.14
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 78.8
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 77.52
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 75.81
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 72.52
+        },
+        {
+          "id": "command-r-2",
+          "heat": 72.94
+        }
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 92.13
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 92.44
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 90.36
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 87.78
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 86.43
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 85.94
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 87
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 87.58
+        },
+        {
+          "id": "grok-4",
+          "heat": 85.98
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 84.64
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 80.75
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 81.64
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 81.05
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 79.5
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 75.5
+        },
+        {
+          "id": "command-r-2",
+          "heat": 75.12
+        }
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 90.98
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 92.33
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 91.59
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 89.23
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 86.81
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 85.17
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 86.15
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 87.61
+        },
+        {
+          "id": "grok-4",
+          "heat": 86.75
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 85.18
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 80.48
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 80.98
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 80.86
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 79.92
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 75.79
+        },
+        {
+          "id": "command-r-2",
+          "heat": 74.58
+        }
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 89.85
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 91.43
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 92.07
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 90.75
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 87.95
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 84.99
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 85.11
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 86.97
+        },
+        {
+          "id": "grok-4",
+          "heat": 87.15
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 86.03
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 80.76
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 80.46
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 80.24
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 79.92
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 76.23
+        },
+        {
+          "id": "command-r-2",
+          "heat": 74.61
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 89.3
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 90.17
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 91.65
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 91.78
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 89.51
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 85.63
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 84.4
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 85.87
+        },
+        {
+          "id": "grok-4",
+          "heat": 86.87
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 86.75
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 81.55
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 80.42
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 79.51
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 79.4
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 76.39
+        },
+        {
+          "id": "command-r-2",
+          "heat": 74.97
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 89.65
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 89.14
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 90.54
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 91.95
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 90.95
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 86.98
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 84.44
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 84.77
+        },
+        {
+          "id": "grok-4",
+          "heat": 85.92
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 86.9
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 82.47
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 80.98
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 79.12
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 78.57
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 76.04
+        },
+        {
+          "id": "command-r-2",
+          "heat": 75.26
+        }
+      ]
+    },
+    {
+      "date": "2026-08-22",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 87.62
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 85.62
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 86.07
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 88.05
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 88.53
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 85.37
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 82.13
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 81
+        },
+        {
+          "id": "grok-4",
+          "heat": 81.44
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 83.08
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 79.84
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 78.74
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 76.15
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 74.67
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 72.02
+        },
+        {
+          "id": "command-r-2",
+          "heat": 71.92
+        }
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 89.21
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 86.2
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 85.2
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 86.81
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 88.39
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 86.64
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 83.62
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 81.29
+        },
+        {
+          "id": "grok-4",
+          "heat": 80.37
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 81.86
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 79.69
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 79.65
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 76.97
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 74.48
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 71.08
+        },
+        {
+          "id": "command-r-2",
+          "heat": 71.22
+        }
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 93.87
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 90.68
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 88.34
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 88.81
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 90.65
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 90.33
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 88.37
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 85.61
+        },
+        {
+          "id": "grok-4",
+          "heat": 83.2
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 83.69
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 81.96
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 83.2
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 81.24
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 78.18
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 73.67
+        },
+        {
+          "id": "command-r-2",
+          "heat": 73.37
+        }
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 94.75
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 92.17
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 89.12
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 88.17
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 89.37
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 89.89
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 89.4
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 87.16
+        },
+        {
+          "id": "grok-4",
+          "heat": 83.74
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 82.73
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 80.54
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 82.74
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 82.04
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 79.21
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 73.73
+        },
+        {
+          "id": "command-r-2",
+          "heat": 72.4
+        }
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 94.9
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 93.36
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 90.42
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 88.36
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 88.31
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 88.8
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 89.57
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 88.57
+        },
+        {
+          "id": "grok-4",
+          "heat": 85.02
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 82.6
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 79.16
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 81.52
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 82.13
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 80.29
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 74.5
+        },
+        {
+          "id": "command-r-2",
+          "heat": 71.96
+        }
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 94.52
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 93.91
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 91.74
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 89.28
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 87.93
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 87.56
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 88.89
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 89.32
+        },
+        {
+          "id": "grok-4",
+          "heat": 86.55
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 83.37
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 78.38
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 79.98
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 81.34
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 80.91
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 75.66
+        },
+        {
+          "id": "command-r-2",
+          "heat": 72.29
+        }
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 94.02
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 93.81
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 92.61
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 90.52
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 88.35
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 86.71
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 87.71
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 89.18
+        },
+        {
+          "id": "grok-4",
+          "heat": 87.75
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 84.74
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 78.49
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 78.68
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 79.9
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 80.69
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 76.68
+        },
+        {
+          "id": "command-r-2",
+          "heat": 73.27
+        }
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 90.65
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 90.16
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 89.63
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 88.38
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 86.13
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 83.39
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 83.4
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 85.1
+        },
+        {
+          "id": "grok-4",
+          "heat": 84.98
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 82.96
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 76.25
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 74.92
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 75.12
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 76.42
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 73.85
+        },
+        {
+          "id": "command-r-2",
+          "heat": 71.28
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 91
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 89.82
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 89.35
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 88.9
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 87.22
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 83.98
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 82.81
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 83.94
+        },
+        {
+          "id": "grok-4",
+          "heat": 84.57
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 83.88
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 77.63
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 75.28
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 73.98
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 74.83
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 73.32
+        },
+        {
+          "id": "command-r-2",
+          "heat": 72.15
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 94.98
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 93.12
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 92.13
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 92.04
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 91.17
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 88.14
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 86.13
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 86.22
+        },
+        {
+          "id": "grok-4",
+          "heat": 86.78
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 87.2
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 82.06
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 79.55
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 76.87
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 76.5
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 75.2
+        },
+        {
+          "id": "command-r-2",
+          "heat": 75.44
+        }
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 95.84
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 93.74
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 92.01
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 91.65
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 91.36
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 89.01
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 86.83
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 85.9
+        },
+        {
+          "id": "grok-4",
+          "heat": 85.71
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 86.56
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 82.67
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 80.85
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 77.43
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 75.57
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 73.54
+        },
+        {
+          "id": "command-r-2",
+          "heat": 74.6
+        }
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 96.35
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 94.62
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 92.39
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 91.35
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 91.07
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 89.42
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 87.68
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 86.24
+        },
+        {
+          "id": "grok-4",
+          "heat": 85.03
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 85.55
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 82.49
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 81.83
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 78.55
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 75.51
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 72.14
+        },
+        {
+          "id": "command-r-2",
+          "heat": 73.11
+        }
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 96.28
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 95.37
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 93.22
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 91.48
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 90.66
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 89.29
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 88.26
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 86.95
+        },
+        {
+          "id": "grok-4",
+          "heat": 84.98
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 84.65
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 81.7
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 82.11
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 79.68
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 76.22
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 71.46
+        },
+        {
+          "id": "command-r-2",
+          "heat": 71.48
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 95.66
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 95.6
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 94.13
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 92.15
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 90.54
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 88.86
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 88.32
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 87.62
+        },
+        {
+          "id": "grok-4",
+          "heat": 85.46
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 84.25
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 80.74
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 81.67
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 80.35
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 77.29
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 71.63
+        },
+        {
+          "id": "command-r-2",
+          "heat": 70.27
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 91.68
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 91.99
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 91.5
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 89.92
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 87.76
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 85.31
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 84.73
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 84.67
+        },
+        {
+          "id": "grok-4",
+          "heat": 82.92
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 81.23
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 76.87
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 77.61
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 77.11
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 74.99
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 69.21
+        },
+        {
+          "id": "command-r-2",
+          "heat": 66.65
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 91.22
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 91.12
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 91.4
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 90.78
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 88.66
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 85.43
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 84.23
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 84.4
+        },
+        {
+          "id": "grok-4",
+          "heat": 83.32
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 81.79
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 76.75
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 76.79
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 76.48
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 75.31
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 70.15
+        },
+        {
+          "id": "command-r-2",
+          "heat": 67
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 94.7
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 93.48
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 93.87
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 94.28
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 92.91
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 89.33
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 87.23
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 87.01
+        },
+        {
+          "id": "grok-4",
+          "heat": 86.42
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 85.49
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 80.33
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 79.6
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 78.84
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 78.19
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 73.95
+        },
+        {
+          "id": "command-r-2",
+          "heat": 70.98
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 95.81
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 93.16
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 92.83
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 93.86
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 93.61
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 90.41
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 87.61
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 86.52
+        },
+        {
+          "id": "grok-4",
+          "heat": 85.86
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 85.59
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 80.87
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 79.74
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 78.23
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 77.45
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 73.94
+        },
+        {
+          "id": "command-r-2",
+          "heat": 71.7
+        }
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 97.49
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 93.69
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 92.01
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 92.85
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 93.63
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 91.44
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 88.57
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 86.53
+        },
+        {
+          "id": "grok-4",
+          "heat": 85.16
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 85.14
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 81.15
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 80.23
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 78.12
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 76.71
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 73.38
+        },
+        {
+          "id": "command-r-2",
+          "heat": 71.97
+        }
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 99.19
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 95.03
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 91.9
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 91.72
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 92.88
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 91.93
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 89.76
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 87.19
+        },
+        {
+          "id": "grok-4",
+          "heat": 84.77
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 84.35
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 80.91
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 80.67
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 78.48
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 76.35
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 72.61
+        },
+        {
+          "id": "command-r-2",
+          "heat": 71.64
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 100
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 96.77
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 92.68
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 91.01
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 91.67
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 91.62
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 90.68
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 88.35
+        },
+        {
+          "id": "grok-4",
+          "heat": 85.02
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 83.62
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 80.15
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 80.67
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 79.01
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 76.52
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 72.05
+        },
+        {
+          "id": "command-r-2",
+          "heat": 70.93
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 95.7
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 92.1
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 88.7
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 87.2
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 86.8
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 86.2
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 85.8
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 85.5
+        },
+        {
+          "id": "grok-4",
+          "heat": 82.5
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 79.3
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 74.6
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 73.6
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 73.3
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 72.9
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 68.2
+        },
+        {
+          "id": "command-r-2",
+          "heat": 65.7
+        }
+      ]
+    }
+  ]
+}

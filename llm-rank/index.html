@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>大模型热度排行 · LLM Heat Ranking</title>
+<meta name="description" content="大模型使用热度、综合评分、胜率与适用场景排行，数据每日自动更新。" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top">
+      <span class="mark">🔥</span>
+      <span>大模型热度排行</span>
+    </a>
+    <nav class="nav">
+      <a href="#trend">热度趋势</a>
+      <a href="#ranking">排行榜</a>
+      <a href="#scenes">适用场景</a>
+      <a href="#detail">数据明细</a>
+      <a href="#about">数据说明</a>
+    </nav>
+    <span class="meta-chip" id="snapshot">数据加载中…</span>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+
+  <section class="hero">
+    <h1>谁是当下最火的<span class="grad">大模型</span>？</h1>
+    <p>聚合主流大模型的使用热度、综合评分、对战胜率与适用场景，每日自动更新数据快照。</p>
+    <div class="hero-badges">
+      <span class="badge live">每日自动更新</span>
+      <span class="badge">使用热度</span>
+      <span class="badge">综合评分</span>
+      <span class="badge">适用场景</span>
+      <span class="badge">趋势对比</span>
+    </div>
+    <div class="stats" id="stats"></div>
+    <p class="meta" id="load-error" style="display:none;color:#ff6b81;font-size:14px"></p>
+  </section>
+
+  <section class="block" id="trend">
+    <div class="block-head">
+      <h2>🔥 热度趋势</h2>
+      <div class="seg" id="trend-seg">
+        <button data-days="7" class="active">近 7 天</button>
+        <button data-days="14">近 14 天</button>
+        <button data-days="30">近 30 天</button>
+      </div>
+      <div class="desc">点击图例可隐藏 / 显示对应曲线</div>
+    </div>
+    <div class="panel">
+      <div class="chart-wrap" id="chart"></div>
+      <div class="desc" style="margin-top:10px;font-size:13px;color:#6b7699">
+        热度指数综合使用量、调用量与社区讨论度归一化得出，取值范围 0–100。
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="ranking">
+    <div class="block-head">
+      <h2>🏆 综合排行榜</h2>
+      <div class="desc">按你选择的口径实时重排</div>
+    </div>
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="搜索模型 / 厂商 / 场景，如 Kimi、代码生成" aria-label="搜索模型" />
+      <select id="scene-filter" aria-label="按场景筛选"></select>
+      <select id="sort" aria-label="排序方式">
+        <option value="usage">按热度指数</option>
+        <option value="score">按综合评分</option>
+        <option value="winRate">按对战胜率</option>
+        <option value="calls">按日均调用</option>
+        <option value="trend">按近期涨幅</option>
+        <option value="value">按性价比</option>
+      </select>
+    </div>
+
+    <div class="head-row" id="rank-head">
+      <div>排名</div>
+      <div>模型 / 厂商</div>
+      <div class="col-calls">日均调用量</div>
+      <div class="col-scene">适用场景</div>
+      <div class="col-win">胜率</div>
+      <div>评分</div>
+      <div>涨跌</div>
+    </div>
+    <div class="rank-list" id="rank-list"></div>
+  </section>
+
+  <section class="block" id="scenes">
+    <div class="block-head">
+      <h2>🎯 适用场景矩阵</h2>
+      <div class="desc">每个场景下按评分推荐 Top 3 模型</div>
+    </div>
+    <div class="scene-grid" id="scene-grid"></div>
+  </section>
+
+  <section class="block" id="detail">
+    <div class="block-head">
+      <h2>📋 模型数据明细</h2>
+      <div class="desc">与上方筛选、排序联动</div>
+    </div>
+    <div class="table-scroll">
+      <table class="detail">
+        <thead>
+          <tr>
+            <th>排名</th><th>模型</th><th>厂商</th><th>热度指数</th><th>综合评分</th>
+            <th>对战胜率</th><th>上下文</th><th>参考价格</th><th>适用场景</th><th>一句话点评</th>
+          </tr>
+        </thead>
+        <tbody id="detail-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="block-head">
+      <h2>📖 数据说明</h2>
+    </div>
+    <div class="panel">
+      <ul style="margin:0;padding-left:20px;color:#98a3c2;font-size:14px;line-height:1.9">
+        <li><b>热度指数</b>：由使用量、日均调用量与社区关注度加权归一化到 0–100，越高代表整体使用热度越高。</li>
+        <li><b>综合评分</b>：能力维度加权得分（推理、代码、中文理解、多模态、稳定性），满分 100。</li>
+        <li><b>对战胜率</b>：在同场景双盲对比中获得更优评价的比例。</li>
+        <li><b>日均调用量</b>：单位为亿次 / 天，为平台侧统计的估算值。</li>
+        <li><b>参考价格</b>：每百万输入 token 的美元价格，仅作横向比较。</li>
+        <li><b>更新频率</b>：每天自动更新一次，保留最近 30 天快照用于趋势对比。</li>
+      </ul>
+      <p style="margin:14px 0 0;color:#6b7699;font-size:13px">
+        数据来源：<span id="source-note">—</span>；更新时间：<span id="updated">—</span>。
+        本站为演示性质的热度聚合站点，指标为公开信息估算值，不构成采购或选型建议。
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>大模型热度排行 · LLM Heat Ranking</span>
+    <span id="footer-meta">加载中…</span>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

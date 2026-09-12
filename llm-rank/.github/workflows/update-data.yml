@@ -1,0 +1,40 @@
+name: 每日更新大模型热度数据
+
+on:
+  schedule:
+    # 每天 00:17 UTC（北京时间 08:17）更新一次
+    - cron: '17 0 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 拉取最新数据并生成快照
+        run: node llm-rank/scripts/update-data.mjs
+        env:
+          # 可选：替换为自定义数据源 API，未设置时使用 OpenRouter 公开模型数据
+          LLM_RANK_SOURCE: ${{ secrets.LLM_RANK_SOURCE }}
+
+      - name: 提交数据变更
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add llm-rank/data/models.json
+          if git diff --staged --quiet; then
+            echo "数据无变化，跳过提交"
+          else
+            git commit -m "chore: 更新大模型热度数据 $(date -u +%F)"
+            git push
+          fi
