@@ -28,6 +28,12 @@
     "ling-3-0-flash-vl-free",
     "nex-n2-5-pro-free",
     "gpt-6-astra",
-    "qwen3-8-max-0902"
+    "qwen3-8-max-0902",
+    "gpt-6-astra-pro",
+    "ling-3-0-flash-sante-free",
+    "muse-spark-1-3-contributor",
+    "gemini-3-8-flash",
+    "claude-fable-5-1",
+    "granite-4-2-8b"
   ]
 }
