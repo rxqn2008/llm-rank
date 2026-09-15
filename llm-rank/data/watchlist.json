@@ -34,6 +34,12 @@
     "muse-spark-1-3-contributor",
     "gemini-3-8-flash",
     "claude-fable-5-1",
-    "granite-4-2-8b"
+    "granite-4-2-8b",
+    "muse-spark-1-3",
+    "ling-3-0-flash-fin",
+    "qwen3-8-flash",
+    "glm-5-3-flash",
+    "deepseek-v4-flash-vision-exp",
+    "hy-mt2-1-8b"
   ]
 }
