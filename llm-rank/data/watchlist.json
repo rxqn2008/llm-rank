@@ -40,6 +40,12 @@
     "qwen3-8-flash",
     "glm-5-3-flash",
     "deepseek-v4-flash-vision-exp",
-    "hy-mt2-1-8b"
+    "hy-mt2-1-8b",
+    "ling-3-0-flash-fin-free",
+    "muse-spark-1-2-contributor",
+    "hy-mt2-30b-a3b",
+    "qwen3-8-27b",
+    "gemini-3-7-flash",
+    "seed-2-1-turbo"
   ]
 }
