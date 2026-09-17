@@ -46,6 +46,8 @@
     "hy-mt2-30b-a3b",
     "qwen3-8-27b",
     "gemini-3-7-flash",
-    "seed-2-1-turbo"
+    "seed-2-1-turbo",
+    "union-alpha",
+    "hy-mt2-7b"
   ]
 }
