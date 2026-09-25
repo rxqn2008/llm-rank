@@ -48,6 +48,8 @@
     "gemini-3-7-flash",
     "seed-2-1-turbo",
     "union-alpha",
-    "hy-mt2-7b"
+    "hy-mt2-7b",
+    "ember-1",
+    "glm-5-3-prime"
   ]
 }
