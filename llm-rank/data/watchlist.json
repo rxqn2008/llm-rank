@@ -50,6 +50,8 @@
     "union-alpha",
     "hy-mt2-7b",
     "ember-1",
-    "glm-5-3-prime"
+    "glm-5-3-prime",
+    "jev-router",
+    "perceptron-mk1-5"
   ]
 }
