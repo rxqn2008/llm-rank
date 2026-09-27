@@ -52,6 +52,10 @@
     "ember-1",
     "glm-5-3-prime",
     "jev-router",
-    "perceptron-mk1-5"
+    "perceptron-mk1-5",
+    "qwen3-8-max-prime",
+    "space-bunny-alpha",
+    "aion-3-5-mini",
+    "solar-mini4"
   ]
 }
