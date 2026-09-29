@@ -60,6 +60,8 @@
     "aion-3-5",
     "command-a-plus",
     "gpt-6-luna-pro",
-    "claude-opus-5-5"
+    "claude-opus-5-5",
+    "claude-sonnet-5-5",
+    "gpt-6-luna"
   ]
 }
