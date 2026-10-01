@@ -66,6 +66,8 @@
     "gpt-6-1-sol-pro",
     "mimo-v2-6-pro-ultraspeed",
     "grok-4-7",
-    "qwen3-8-omni-flash"
+    "qwen3-8-omni-flash",
+    "gpt-6-1-sol",
+    "mimo-v2-6-flash"
   ]
 }
