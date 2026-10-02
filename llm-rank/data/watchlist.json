@@ -68,6 +68,7 @@
     "grok-4-7",
     "qwen3-8-omni-flash",
     "gpt-6-1-sol",
-    "mimo-v2-6-flash"
+    "mimo-v2-6-flash",
+    "apodex-1-1-mini-free"
   ]
 }
