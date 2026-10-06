@@ -1,13 +1,13 @@
 {
-  "snapshot": "2026-10-05",
-  "updatedAt": "2026-10-05T05:38:32.784Z",
+  "snapshot": "2026-10-06",
+  "updatedAt": "2026-10-06T06:19:25.323Z",
   "source": "openrouter",
   "sourceNote": "基于 OpenRouter 公开模型列表标注发布时间与收录新模型，热度为公开信息估算",
   "newWindowDays": 120,
   "latestRelease": {
-    "id": "ling-3-1-flash",
-    "name": "Ling 3.1 Flash",
-    "releasedAt": "2026-10-02"
+    "id": "apodex-1-1-mini-free",
+    "name": "Apodex 1.1 Mini (free)",
+    "releasedAt": "2026-10-01"
   },
   "modelCount": 48,
   "models": [
@@ -15,7 +15,7 @@
       "id": "gpt-5-1",
       "name": "GPT-5.1",
       "vendor": "OpenAI",
-      "usage": 73.1,
+      "usage": 74.3,
       "score": 92,
       "winRate": 86.4,
       "calls": 9.2,
@@ -32,14 +32,14 @@
       "summary": "综合能力最强，生态与工具链成熟，适合高端推理与复杂 Agent 任务。",
       "homepage": "https://openai.com",
       "rank": 1,
-      "share": 3.62,
+      "share": 3.76,
       "releasedAt": "2025-11-13"
     },
     {
       "id": "claude-sonnet-4-5",
       "name": "Claude Sonnet 4.5",
       "vendor": "Anthropic",
-      "usage": 72.7,
+      "usage": 74,
       "score": 94,
       "winRate": 84.1,
       "calls": 8.6,
@@ -56,14 +56,14 @@
       "summary": "长上下文与代码理解突出，输出风格稳健，适合文档与工程类场景。",
       "homepage": "https://anthropic.com",
       "rank": 2,
-      "share": 3.6,
+      "share": 3.75,
       "releasedAt": "2025-09-29"
     },
     {
       "id": "gemini-2-5-pro",
       "name": "Gemini 2.5 Pro",
       "vendor": "Google DeepMind",
-      "usage": 72.4,
+      "usage": 72.8,
       "score": 91,
       "winRate": 82.7,
       "calls": 7.4,
@@ -80,14 +80,14 @@
       "summary": "原生多模态与超长上下文，适合视频、图文混排与科研资料分析。",
       "homepage": "https://deepmind.google",
       "rank": 3,
-      "share": 3.58,
+      "share": 3.69,
       "releasedAt": "2025-06-17"
     },
     {
       "id": "deepseek-v3-2",
       "name": "DeepSeek-V3.2",
       "vendor": "DeepSeek",
-      "usage": 66.5,
+      "usage": 65.2,
       "score": 89,
       "winRate": 90.3,
       "calls": 11.8,
@@ -104,14 +104,14 @@
       "summary": "中文能力与性价比双优，开源权重适合私有化与高并发调用。",
       "homepage": "https://deepseek.com",
       "rank": 4,
-      "share": 3.29,
+      "share": 3.3,
       "releasedAt": "2025-12-01"
     },
     {
       "id": "glm-5-3",
       "name": "GLM-5.3",
       "vendor": "智谱 AI",
-      "usage": 59.5,
+      "usage": 58.2,
       "score": 87,
       "winRate": 74.2,
       "calls": 5.8,
@@ -128,14 +128,14 @@
       "summary": "国产化适配好，中文问答与私有化知识库场景表现稳定。",
       "homepage": "https://zhipuai.cn",
       "rank": 5,
-      "share": 2.94,
+      "share": 2.95,
       "releasedAt": "2026-08-18"
     },
     {
       "id": "kimi-k3",
       "name": "Kimi K3",
       "vendor": "月之暗面",
-      "usage": 59.2,
+      "usage": 57.8,
       "score": 88,
       "winRate": 79.5,
       "calls": 6.9,
@@ -159,7 +159,7 @@
       "id": "qwen3-max",
       "name": "Qwen3-Max",
       "vendor": "阿里云通义",
-      "usage": 58.9,
+      "usage": 57.5,
       "score": 90,
       "winRate": 88.9,
       "calls": 10.4,
@@ -183,7 +183,7 @@
       "id": "llama-4-405b",
       "name": "Llama 4 405B",
       "vendor": "Meta",
-      "usage": 58.5,
+      "usage": 57.1,
       "score": 85,
       "winRate": 71.6,
       "calls": 5.2,
@@ -206,7 +206,7 @@
       "id": "grok-4",
       "name": "Grok 4",
       "vendor": "xAI",
-      "usage": 58.1,
+      "usage": 56.8,
       "score": 83,
       "winRate": 68.4,
       "calls": 4.7,
@@ -222,13 +222,13 @@
       "summary": "接入实时信息流，擅长热点追踪与个性化风格对话。",
       "homepage": "https://x.ai",
       "rank": 9,
-      "share": 2.87
+      "share": 2.88
     },
     {
       "id": "doubao-pro-2-0",
       "name": "Doubao-Pro 2.0",
       "vendor": "字节跳动",
-      "usage": 57.5,
+      "usage": 56.4,
       "score": 86,
       "winRate": 83.2,
       "calls": 9.6,
@@ -245,13 +245,13 @@
       "summary": "内容创作与语音交互强，C 端产品集成度高。",
       "homepage": "https://volcengine.com",
       "rank": 10,
-      "share": 2.84
+      "share": 2.86
     },
     {
       "id": "mistral-large-3",
       "name": "Mistral Large 3",
       "vendor": "Mistral AI",
-      "usage": 57.1,
+      "usage": 56.1,
       "score": 82,
       "winRate": 52.7,
       "calls": 2.9,
@@ -268,13 +268,13 @@
       "summary": "欧盟合规友好，多语言与函数调用能力扎实。",
       "homepage": "https://mistral.ai",
       "rank": 11,
-      "share": 2.82
+      "share": 2.84
     },
     {
       "id": "ernie-5-0",
       "name": "ERNIE 5.0",
       "vendor": "百度文心",
-      "usage": 56.8,
+      "usage": 55.7,
       "score": 84,
       "winRate": 66.1,
       "calls": 4.4,
@@ -291,13 +291,13 @@
       "summary": "检索增强与中文语义理解成熟，搜索类场景优势明显。",
       "homepage": "https://yiyan.baidu.com",
       "rank": 12,
-      "share": 2.81
+      "share": 2.82
     },
     {
       "id": "grok-4-mini",
       "name": "Grok 4 mini",
       "vendor": "xAI",
-      "usage": 53.6,
+      "usage": 53,
       "score": 79,
       "winRate": 55.3,
       "calls": 3.1,
@@ -312,13 +312,13 @@
       "summary": "轻量高效，适合高并发低成本场景。",
       "homepage": "https://x.ai",
       "rank": 13,
-      "share": 2.65
+      "share": 2.68
     },
     {
       "id": "hunyuan-turbos",
       "name": "Hunyuan-TurboS",
       "vendor": "腾讯混元",
-      "usage": 45.7,
+      "usage": 44.1,
       "score": 81,
       "winRate": 61.8,
       "calls": 4,
@@ -335,13 +335,13 @@
       "summary": "游戏与社交内容场景积累深，接入微信生态便利。",
       "homepage": "https://hunyuan.tencent.com",
       "rank": 14,
-      "share": 2.26
+      "share": 2.23
     },
     {
       "id": "yi-large-2",
       "name": "Yi-Large 2",
       "vendor": "零一万物",
-      "usage": 42.6,
+      "usage": 41.8,
       "score": 78,
       "winRate": 42.6,
       "calls": 2.4,
@@ -357,13 +357,13 @@
       "summary": "双语均衡、开源友好，适合中小团队自建。",
       "homepage": "https://01.ai",
       "rank": 15,
-      "share": 2.11
+      "share": 2.12
     },
     {
       "id": "command-r-2",
       "name": "Command R+ 2",
       "vendor": "Cohere",
-      "usage": 42.3,
+      "usage": 41.5,
       "score": 77,
       "winRate": 39.4,
       "calls": 2.1,
@@ -379,13 +379,13 @@
       "summary": "面向 RAG 与企业搜索场景优化，检索引用规范。",
       "homepage": "https://cohere.com",
       "rank": 16,
-      "share": 2.09
+      "share": 2.1
     },
     {
       "id": "schematron-v2-turbo",
       "name": "Schematron V2 Turbo",
       "vendor": "inference-net",
-      "usage": 41.9,
+      "usage": 41.1,
       "score": 82,
       "winRate": 47.1,
       "calls": 6.3,
@@ -399,14 +399,14 @@
       "summary": "",
       "homepage": "https://openrouter.ai/inference-net/schematron-v2-turbo",
       "rank": 17,
-      "share": 2.07,
+      "share": 2.08,
       "releasedAt": "2026-09-12"
     },
     {
       "id": "fugu-ultra-v2",
       "name": "Fugu Ultra v2",
       "vendor": "sakana",
-      "usage": 41.6,
+      "usage": 40.8,
       "score": 81.9,
       "winRate": 46.9,
       "calls": 6.2,
@@ -420,14 +420,14 @@
       "summary": "",
       "homepage": "https://openrouter.ai/sakana/fugu-ultra-v2",
       "rank": 18,
-      "share": 2.06,
+      "share": 2.07,
       "releasedAt": "2026-09-11"
     },
     {
       "id": "ling-3-0-flash-vl",
       "name": "Ling 3.0 Flash VL",
       "vendor": "inclusionai",
-      "usage": 40.7,
+      "usage": 40.4,
       "score": 81.7,
       "winRate": 46.6,
       "calls": 6.2,
@@ -442,14 +442,14 @@
       "summary": "",
       "homepage": "https://openrouter.ai/inclusionai/ling-3.0-flash-vl",
       "rank": 19,
-      "share": 2.01,
+      "share": 2.05,
       "releasedAt": "2026-09-10"
     },
     {
       "id": "deepseek-v4-1-flash",
       "name": "DeepSeek V4.1 Flash",
       "vendor": "deepseek",
-      "usage": 40.1,
+      "usage": 40,
       "score": 81.3,
       "winRate": 45.6,
       "calls": 6.1,
@@ -466,7 +466,7 @@
       "summary": "",
       "homepage": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
       "rank": 20,
-      "share": 1.98,
+      "share": 2.03,
       "releasedAt": "2026-09-10"
     },
     {
@@ -488,7 +488,7 @@
       "summary": "",
       "homepage": "https://openrouter.ai/inception/mercury-2.5",
       "rank": 21,
-      "share": 1.96,
+      "share": 2.01,
       "releasedAt": "2026-09-08"
     },
     {
@@ -510,14 +510,14 @@
       "summary": "",
       "homepage": "https://openrouter.ai/nex-agi/nex-n2.5-mini:free",
       "rank": 22,
-      "share": 1.95,
+      "share": 2,
       "releasedAt": "2026-09-08"
     },
     {
       "id": "schematron-v2-small",
       "name": "Schematron V2 Small",
       "vendor": "inference-net",
-      "usage": 36.8,
+      "usage": 35.5,
       "score": 79.7,
       "winRate": 42.3,
       "calls": 5.6,
@@ -531,14 +531,14 @@
       "summary": "",
       "homepage": "https://openrouter.ai/inference-net/schematron-v2-small",
       "rank": 23,
-      "share": 1.82,
+      "share": 1.8,
       "releasedAt": "2026-09-12"
     },
     {
       "id": "fugu-max",
       "name": "Fugu Max",
       "vendor": "sakana",
-      "usage": 31.6,
+      "usage": 30.3,
       "score": 79.6,
       "winRate": 42,
       "calls": 5.6,
@@ -552,14 +552,14 @@
       "summary": "",
       "homepage": "https://openrouter.ai/sakana/fugu-max",
       "rank": 24,
-      "share": 1.56,
+      "share": 1.53,
       "releasedAt": "2026-09-11"
     },
     {
       "id": "ling-3-0-flash-vl-free",
       "name": "Ling 3.0 Flash VL (free)",
       "vendor": "inclusionai",
-      "usage": 31.2,
+      "usage": 29.9,
       "score": 79.4,
       "winRate": 41.5,
       "calls": 5.5,
@@ -575,14 +575,14 @@
       "summary": "",
       "homepage": "https://openrouter.ai/inclusionai/ling-3.0-flash-vl:free",
       "rank": 25,
-      "share": 1.54,
+      "share": 1.51,
       "releasedAt": "2026-09-10"
     },
     {
       "id": "nex-n2-5-pro-free",
       "name": "Nex-N2.5-Pro (free)",
       "vendor": "nex-agi",
-      "usage": 30.9,
+      "usage": 29.6,
       "score": 79,
       "winRate": 40.8,
       "calls": 5.4,
@@ -597,14 +597,14 @@
       "summary": "",
       "homepage": "https://openrouter.ai/nex-agi/nex-n2.5-pro:free",
       "rank": 26,
-      "share": 1.53,
+      "share": 1.5,
       "releasedAt": "2026-09-08"
     },
     {
       "id": "gpt-6-astra",
       "name": "GPT-6 Astra",
       "vendor": "openai",
-      "usage": 30.5,
+      "usage": 29.2,
       "score": 78.9,
       "winRate": 40.5,
       "calls": 5.4,
@@ -619,14 +619,14 @@
       "summary": "",
       "homepage": "https://openrouter.ai/openai/gpt-6-astra",
       "rank": 27,
-      "share": 1.51,
+      "share": 1.48,
       "releasedAt": "2026-09-04"
     },
     {
       "id": "qwen3-8-max-0902",
       "name": "Qwen3.8 Max (0902)",
       "vendor": "qwen",
-      "usage": 30.2,
+      "usage": 28.9,
       "score": 78.8,
       "winRate": 40.3,
       "calls": 5.4,
@@ -642,14 +642,148 @@
       "summary": "",
       "homepage": "https://openrouter.ai/qwen/qwen3.8-max-0902",
       "rank": 28,
-      "share": 1.49,
+      "share": 1.46,
       "releasedAt": "2026-09-03"
+    },
+    {
+      "id": "apodex-1-1-mini-free",
+      "name": "Apodex 1.1 Mini (free)",
+      "vendor": "apodex",
+      "usage": 28.5,
+      "score": 70,
+      "winRate": 21.4,
+      "calls": 2.9,
+      "context": 256,
+      "price": 0,
+      "scenarios": [
+        "通用对话",
+        "超长文档",
+        "高并发低成本",
+        "企业知识库"
+      ],
+      "summary": "",
+      "homepage": "https://openrouter.ai/apodex/apodex-1.1-mini:free",
+      "rank": 29,
+      "share": 1.44,
+      "releasedAt": "2026-10-01"
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
+      "vendor": "anthropic",
+      "usage": 28.1,
+      "score": 69.9,
+      "winRate": 21.1,
+      "calls": 2.8,
+      "context": 977,
+      "price": 2,
+      "scenarios": [
+        "通用对话",
+        "代码生成",
+        "超长文档",
+        "多模态理解"
+      ],
+      "summary": "",
+      "homepage": "https://openrouter.ai/anthropic/claude-sonnet-5.5",
+      "rank": 30,
+      "share": 1.42,
+      "releasedAt": "2026-09-28"
+    },
+    {
+      "id": "qwen3-8-max-prime",
+      "name": "Qwen3.8 Max Prime",
+      "vendor": "qwen",
+      "usage": 27.8,
+      "score": 69.7,
+      "winRate": 20.9,
+      "calls": 2.8,
+      "context": 977,
+      "price": 4,
+      "scenarios": [
+        "通用对话",
+        "代码生成",
+        "超长文档",
+        "多语言翻译",
+        "开源微调"
+      ],
+      "summary": "",
+      "homepage": "https://openrouter.ai/qwen/qwen3.8-max-prime",
+      "rank": 31,
+      "share": 1.41,
+      "releasedAt": "2026-09-23"
+    },
+    {
+      "id": "aion-3-5-mini",
+      "name": "Aion 3.5 Mini",
+      "vendor": "aion-labs",
+      "usage": 27.4,
+      "score": 69.6,
+      "winRate": 20.6,
+      "calls": 2.7,
+      "context": 256,
+      "price": 0.7,
+      "scenarios": [
+        "通用对话",
+        "超长文档",
+        "高并发低成本",
+        "企业知识库"
+      ],
+      "summary": "",
+      "homepage": "https://openrouter.ai/aion-labs/aion-3.5-mini",
+      "rank": 32,
+      "share": 1.39,
+      "releasedAt": "2026-09-23"
+    },
+    {
+      "id": "gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "vendor": "openai",
+      "usage": 27.1,
+      "score": 69.5,
+      "winRate": 20.3,
+      "calls": 2.7,
+      "context": 1025,
+      "price": 0.1,
+      "scenarios": [
+        "通用对话",
+        "代码生成",
+        "超长文档",
+        "高并发低成本",
+        "多模态理解",
+        "企业知识库"
+      ],
+      "summary": "",
+      "homepage": "https://openrouter.ai/openai/gpt-6-luna",
+      "rank": 33,
+      "share": 1.37,
+      "releasedAt": "2026-09-22"
+    },
+    {
+      "id": "mimo-v2-6-pro-ultraspeed",
+      "name": "MiMo-V2.6-Pro-UltraSpeed",
+      "vendor": "xiaomi",
+      "usage": 26.8,
+      "score": 69.4,
+      "winRate": 20.1,
+      "calls": 2.7,
+      "context": 1024,
+      "price": 4.35,
+      "scenarios": [
+        "通用对话",
+        "超长文档",
+        "复杂推理"
+      ],
+      "summary": "",
+      "homepage": "https://openrouter.ai/xiaomi/mimo-v2.6-pro-ultraspeed",
+      "rank": 34,
+      "share": 1.36,
+      "releasedAt": "2026-09-21"
     },
     {
       "id": "gpt-6-1-sol",
       "name": "GPT-6.1 Sol",
       "vendor": "openai",
-      "usage": 29.8,
+      "usage": 26.4,
       "score": 70.4,
       "winRate": 22.4,
       "calls": 3,
@@ -663,15 +797,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/openai/gpt-6.1-sol",
-      "rank": 29,
-      "share": 1.47,
+      "rank": 35,
+      "share": 1.34,
       "releasedAt": "2026-09-29"
     },
     {
       "id": "perceptron-mk1-5",
       "name": "Perceptron Mk1.5",
       "vendor": "perceptron",
-      "usage": 29.5,
+      "usage": 26.1,
       "score": 70.3,
       "winRate": 22.1,
       "calls": 2.9,
@@ -684,15 +818,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/perceptron/perceptron-mk1.5",
-      "rank": 30,
-      "share": 1.46,
+      "rank": 36,
+      "share": 1.32,
       "releasedAt": "2026-09-25"
     },
     {
       "id": "aion-3-5",
       "name": "Aion 3.5",
       "vendor": "aion-labs",
-      "usage": 29.1,
+      "usage": 25.7,
       "score": 70.2,
       "winRate": 21.8,
       "calls": 2.9,
@@ -705,15 +839,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/aion-labs/aion-3.5",
-      "rank": 31,
-      "share": 1.44,
+      "rank": 37,
+      "share": 1.3,
       "releasedAt": "2026-09-23"
     },
     {
       "id": "solar-mini4",
       "name": "Solar Mini 4",
       "vendor": "upstage",
-      "usage": 28.8,
+      "usage": 25.4,
       "score": 70.1,
       "winRate": 21.6,
       "calls": 2.9,
@@ -727,15 +861,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/upstage/solar-mini4",
-      "rank": 32,
-      "share": 1.42,
+      "rank": 38,
+      "share": 1.29,
       "releasedAt": "2026-09-23"
     },
     {
       "id": "command-a-plus",
       "name": "Command A+",
       "vendor": "cohere",
-      "usage": 28.4,
+      "usage": 25,
       "score": 70,
       "winRate": 21.3,
       "calls": 2.8,
@@ -750,15 +884,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/cohere/command-a-plus",
-      "rank": 33,
-      "share": 1.4,
+      "rank": 39,
+      "share": 1.27,
       "releasedAt": "2026-09-22"
     },
     {
       "id": "mimo-v2-6-pro",
       "name": "MiMo-V2.6-Pro",
       "vendor": "xiaomi",
-      "usage": 28.1,
+      "usage": 24.6,
       "score": 69.8,
       "winRate": 21.1,
       "calls": 2.8,
@@ -772,15 +906,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/xiaomi/mimo-v2.6-pro",
-      "rank": 34,
-      "share": 1.39,
+      "rank": 40,
+      "share": 1.25,
       "releasedAt": "2026-09-21"
     },
     {
       "id": "gpt-6-1-sol-pro",
       "name": "GPT-6.1 Sol Pro",
       "vendor": "openai",
-      "usage": 27.7,
+      "usage": 24.3,
       "score": 70,
       "winRate": 21.3,
       "calls": 2.8,
@@ -794,15 +928,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/openai/gpt-6.1-sol-pro",
-      "rank": 35,
-      "share": 1.37,
+      "rank": 41,
+      "share": 1.23,
       "releasedAt": "2026-09-29"
     },
     {
       "id": "ember-1",
       "name": "Ember-1",
       "vendor": "fireworks",
-      "usage": 27.4,
+      "usage": 23.9,
       "score": 69.8,
       "winRate": 21.1,
       "calls": 2.8,
@@ -815,15 +949,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/fireworks/ember-1",
-      "rank": 36,
-      "share": 1.36,
+      "rank": 42,
+      "share": 1.21,
       "releasedAt": "2026-09-24"
     },
     {
       "id": "claude-opus-5-5",
       "name": "Claude Opus 5.5",
       "vendor": "anthropic",
-      "usage": 27,
+      "usage": 23.6,
       "score": 69.7,
       "winRate": 20.8,
       "calls": 2.8,
@@ -837,15 +971,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/anthropic/claude-opus-5.5",
-      "rank": 37,
-      "share": 1.34,
+      "rank": 43,
+      "share": 1.2,
       "releasedAt": "2026-09-22"
     },
     {
       "id": "mimo-v2-6-flash",
       "name": "MiMo-V2.6-Flash",
       "vendor": "xiaomi",
-      "usage": 26.7,
+      "usage": 23.3,
       "score": 69.6,
       "winRate": 20.5,
       "calls": 2.7,
@@ -859,15 +993,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/xiaomi/mimo-v2.6-flash",
-      "rank": 38,
-      "share": 1.32,
+      "rank": 44,
+      "share": 1.18,
       "releasedAt": "2026-09-21"
     },
     {
       "id": "grok-4-7",
       "name": "Grok 4.7",
       "vendor": "x-ai",
-      "usage": 25.8,
+      "usage": 22.9,
       "score": 69.5,
       "winRate": 20.3,
       "calls": 2.7,
@@ -880,15 +1014,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/x-ai/grok-4.7",
-      "rank": 39,
-      "share": 1.28,
+      "rank": 45,
+      "share": 1.16,
       "releasedAt": "2026-09-21"
     },
     {
       "id": "qwen3-8-omni-flash",
       "name": "Qwen3.8 Omni Flash",
       "vendor": "qwen",
-      "usage": 25.4,
+      "usage": 22.6,
       "score": 69.3,
       "winRate": 20,
       "calls": 2.7,
@@ -904,15 +1038,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/qwen/qwen3.8-omni-flash",
-      "rank": 40,
-      "share": 1.26,
+      "rank": 46,
+      "share": 1.14,
       "releasedAt": "2026-09-21"
     },
     {
       "id": "gpt-6-astra-pro",
       "name": "GPT-6 Astra Pro",
       "vendor": "openai",
-      "usage": 25.1,
+      "usage": 22.2,
       "score": 78.1,
       "winRate": 38.9,
       "calls": 5.2,
@@ -926,15 +1060,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/openai/gpt-6-astra-pro",
-      "rank": 41,
-      "share": 1.24,
+      "rank": 47,
+      "share": 1.12,
       "releasedAt": "2026-09-04"
     },
     {
       "id": "ling-3-0-flash-sante-free",
       "name": "Ling 3.0 Flash Sante (free)",
       "vendor": "inclusionai",
-      "usage": 24.7,
+      "usage": 21.9,
       "score": 77.7,
       "winRate": 37.9,
       "calls": 5.1,
@@ -948,216 +1082,12 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free",
-      "rank": 42,
-      "share": 1.22,
-      "releasedAt": "2026-09-04"
-    },
-    {
-      "id": "muse-spark-1-3-contributor",
-      "name": "Muse Spark 1.3 Contributor",
-      "vendor": "meta",
-      "usage": 24.4,
-      "score": 77.6,
-      "winRate": 37.6,
-      "calls": 5,
-      "context": 1024,
-      "price": 0.1,
-      "scenarios": [
-        "通用对话",
-        "超长文档",
-        "高并发低成本",
-        "企业知识库"
-      ],
-      "summary": "",
-      "homepage": "https://openrouter.ai/meta/muse-spark-1.3-contributor",
-      "rank": 43,
-      "share": 1.21,
-      "releasedAt": "2026-09-02"
-    },
-    {
-      "id": "ling-3-1-flash",
-      "name": "Ling 3.1 Flash",
-      "vendor": "inclusionai",
-      "usage": 24,
-      "score": 69.9,
-      "winRate": 21.2,
-      "calls": 2.8,
-      "context": 256,
-      "price": 0,
-      "scenarios": [
-        "通用对话",
-        "超长文档",
-        "高并发低成本",
-        "企业知识库"
-      ],
-      "summary": "",
-      "homepage": "https://openrouter.ai/inclusionai/ling-3.1-flash",
-      "rank": 44,
-      "share": 1.19,
-      "releasedAt": "2026-10-02"
-    },
-    {
-      "id": "jev-router",
-      "name": "Jev Router",
-      "vendor": "typesafe",
-      "usage": 23.7,
-      "score": 69.8,
-      "winRate": 20.9,
-      "calls": 2.8,
-      "context": 977,
-      "price": -1000000,
-      "scenarios": [
-        "通用对话",
-        "超长文档",
-        "高并发低成本",
-        "企业知识库"
-      ],
-      "summary": "",
-      "homepage": "https://openrouter.ai/typesafe/jev-router",
-      "rank": 45,
-      "share": 1.17,
-      "releasedAt": "2026-09-25"
-    },
-    {
-      "id": "glm-5-3-prime",
-      "name": "GLM 5.3 Prime",
-      "vendor": "z-ai",
-      "usage": 23.3,
-      "score": 69.6,
-      "winRate": 20.6,
-      "calls": 2.8,
-      "context": 977,
-      "price": 2.8,
-      "scenarios": [
-        "通用对话",
-        "代码生成",
-        "超长文档",
-        "多语言翻译",
-        "开源微调"
-      ],
-      "summary": "",
-      "homepage": "https://openrouter.ai/z-ai/glm-5.3-prime",
-      "rank": 46,
-      "share": 1.15,
-      "releasedAt": "2026-09-23"
-    },
-    {
-      "id": "gpt-6-luna-pro",
-      "name": "GPT-6 Luna Pro",
-      "vendor": "openai",
-      "usage": 23,
-      "score": 69.5,
-      "winRate": 20.4,
-      "calls": 2.7,
-      "context": 1025,
-      "price": 0.1,
-      "scenarios": [
-        "通用对话",
-        "代码生成",
-        "超长文档",
-        "高并发低成本",
-        "多模态理解",
-        "企业知识库"
-      ],
-      "summary": "",
-      "homepage": "https://openrouter.ai/openai/gpt-6-luna-pro",
-      "rank": 47,
-      "share": 1.14,
-      "releasedAt": "2026-09-22"
-    },
-    {
-      "id": "switchyard",
-      "name": "Switchyard",
-      "vendor": "nvidia",
-      "usage": 22.6,
-      "score": 69.4,
-      "winRate": 20.1,
-      "calls": 2.7,
-      "context": 977,
-      "price": -1000000,
-      "scenarios": [
-        "通用对话",
-        "超长文档",
-        "高并发低成本",
-        "企业知识库"
-      ],
-      "summary": "",
-      "homepage": "https://openrouter.ai/nvidia/switchyard",
       "rank": 48,
-      "share": 1.12,
-      "releasedAt": "2026-09-21"
+      "share": 1.11,
+      "releasedAt": "2026-09-04"
     }
   ],
   "history": [
-    {
-      "date": "2026-09-06",
-      "usage": [
-        {
-          "id": "gpt-5-1",
-          "heat": 91.22
-        },
-        {
-          "id": "claude-sonnet-4-5",
-          "heat": 91.12
-        },
-        {
-          "id": "gemini-2-5-pro",
-          "heat": 91.4
-        },
-        {
-          "id": "deepseek-v3-2",
-          "heat": 90.78
-        },
-        {
-          "id": "qwen3-max",
-          "heat": 88.66
-        },
-        {
-          "id": "kimi-k3",
-          "heat": 85.43
-        },
-        {
-          "id": "glm-5-3",
-          "heat": 84.23
-        },
-        {
-          "id": "llama-4-405b",
-          "heat": 84.4
-        },
-        {
-          "id": "grok-4",
-          "heat": 83.32
-        },
-        {
-          "id": "doubao-pro-2-0",
-          "heat": 81.79
-        },
-        {
-          "id": "grok-4-mini",
-          "heat": 76.75
-        },
-        {
-          "id": "mistral-large-3",
-          "heat": 76.79
-        },
-        {
-          "id": "ernie-5-0",
-          "heat": 76.48
-        },
-        {
-          "id": "hunyuan-turbos",
-          "heat": 75.31
-        },
-        {
-          "id": "yi-large-2",
-          "heat": 70.15
-        },
-        {
-          "id": "command-r-2",
-          "heat": 67
-        }
-      ]
-    },
     {
       "date": "2026-09-07",
       "usage": [
@@ -5948,6 +5878,203 @@
         {
           "id": "switchyard",
           "heat": 22.6
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 74.3
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 74
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 72.8
+        },
+        {
+          "id": "deepseek-v3-2",
+          "heat": 65.2
+        },
+        {
+          "id": "glm-5-3",
+          "heat": 58.2
+        },
+        {
+          "id": "kimi-k3",
+          "heat": 57.8
+        },
+        {
+          "id": "qwen3-max",
+          "heat": 57.5
+        },
+        {
+          "id": "llama-4-405b",
+          "heat": 57.1
+        },
+        {
+          "id": "grok-4",
+          "heat": 56.8
+        },
+        {
+          "id": "doubao-pro-2-0",
+          "heat": 56.4
+        },
+        {
+          "id": "mistral-large-3",
+          "heat": 56.1
+        },
+        {
+          "id": "ernie-5-0",
+          "heat": 55.7
+        },
+        {
+          "id": "grok-4-mini",
+          "heat": 53
+        },
+        {
+          "id": "hunyuan-turbos",
+          "heat": 44.1
+        },
+        {
+          "id": "yi-large-2",
+          "heat": 41.8
+        },
+        {
+          "id": "command-r-2",
+          "heat": 41.5
+        },
+        {
+          "id": "schematron-v2-turbo",
+          "heat": 41.1
+        },
+        {
+          "id": "fugu-ultra-v2",
+          "heat": 40.8
+        },
+        {
+          "id": "ling-3-0-flash-vl",
+          "heat": 40.4
+        },
+        {
+          "id": "deepseek-v4-1-flash",
+          "heat": 40
+        },
+        {
+          "id": "mercury-2-5",
+          "heat": 39.7
+        },
+        {
+          "id": "nex-n2-5-mini-free",
+          "heat": 39.4
+        },
+        {
+          "id": "schematron-v2-small",
+          "heat": 35.5
+        },
+        {
+          "id": "fugu-max",
+          "heat": 30.3
+        },
+        {
+          "id": "ling-3-0-flash-vl-free",
+          "heat": 29.9
+        },
+        {
+          "id": "nex-n2-5-pro-free",
+          "heat": 29.6
+        },
+        {
+          "id": "gpt-6-astra",
+          "heat": 29.2
+        },
+        {
+          "id": "qwen3-8-max-0902",
+          "heat": 28.9
+        },
+        {
+          "id": "apodex-1-1-mini-free",
+          "heat": 28.5
+        },
+        {
+          "id": "claude-sonnet-5-5",
+          "heat": 28.1
+        },
+        {
+          "id": "qwen3-8-max-prime",
+          "heat": 27.8
+        },
+        {
+          "id": "aion-3-5-mini",
+          "heat": 27.4
+        },
+        {
+          "id": "gpt-6-luna",
+          "heat": 27.1
+        },
+        {
+          "id": "mimo-v2-6-pro-ultraspeed",
+          "heat": 26.8
+        },
+        {
+          "id": "gpt-6-1-sol",
+          "heat": 26.4
+        },
+        {
+          "id": "perceptron-mk1-5",
+          "heat": 26.1
+        },
+        {
+          "id": "aion-3-5",
+          "heat": 25.7
+        },
+        {
+          "id": "solar-mini4",
+          "heat": 25.4
+        },
+        {
+          "id": "command-a-plus",
+          "heat": 25
+        },
+        {
+          "id": "mimo-v2-6-pro",
+          "heat": 24.6
+        },
+        {
+          "id": "gpt-6-1-sol-pro",
+          "heat": 24.3
+        },
+        {
+          "id": "ember-1",
+          "heat": 23.9
+        },
+        {
+          "id": "claude-opus-5-5",
+          "heat": 23.6
+        },
+        {
+          "id": "mimo-v2-6-flash",
+          "heat": 23.3
+        },
+        {
+          "id": "grok-4-7",
+          "heat": 22.9
+        },
+        {
+          "id": "qwen3-8-omni-flash",
+          "heat": 22.6
+        },
+        {
+          "id": "gpt-6-astra-pro",
+          "heat": 22.2
+        },
+        {
+          "id": "ling-3-0-flash-sante-free",
+          "heat": 21.9
         }
       ]
     }
