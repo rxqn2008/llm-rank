@@ -76,6 +76,7 @@
     "gemini-nano-banana-2-1",
     "mistral-large-4-0",
     "claude-haiku-5-5",
-    "gpt-6-sol-pro"
+    "gpt-6-sol-pro",
+    "ternary-bonsai-2-27b"
   ]
 }
