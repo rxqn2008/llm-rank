@@ -79,6 +79,8 @@
     "gpt-6-sol-pro",
     "ternary-bonsai-2-27b",
     "glm-5-3-flashx",
-    "pareto"
+    "pareto",
+    "muse-wonder",
+    "gpt-6-sol"
   ]
 }
