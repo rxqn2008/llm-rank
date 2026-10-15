@@ -85,6 +85,7 @@
     "pareto-26-9",
     "lfm-2-5-24b-a2b",
     "gemini-4-argon",
-    "summarize"
+    "summarize",
+    "extract"
   ]
 }
