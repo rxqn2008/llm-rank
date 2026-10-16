@@ -86,6 +86,9 @@
     "lfm-2-5-24b-a2b",
     "gemini-4-argon",
     "summarize",
-    "extract"
+    "extract",
+    "moondream3-1-9b-a2b",
+    "muse-spark-open",
+    "nemotron-3-5-super-vl"
   ]
 }
