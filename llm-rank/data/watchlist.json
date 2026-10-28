@@ -101,6 +101,8 @@
     "flint-v1-0-free",
     "minimax-m3-1-flash",
     "kimi-k3-1-pro",
-    "gpt-6-1-terra-pro"
+    "gpt-6-1-terra-pro",
+    "gpt-6-1-terra",
+    "ternary-bonsai-2-9b"
   ]
 }
