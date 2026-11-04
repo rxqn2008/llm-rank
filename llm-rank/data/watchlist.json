@@ -105,6 +105,8 @@
     "gpt-6-1-terra",
     "ternary-bonsai-2-9b",
     "particle-1",
-    "glm-5-3-flashx-legal"
+    "glm-5-3-flashx-legal",
+    "hy4",
+    "crouton-alpha"
   ]
 }
