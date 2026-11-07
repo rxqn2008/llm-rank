@@ -110,6 +110,9 @@
     "crouton-alpha",
     "ling-3-0-tiny",
     "gemini-omni-1-2-flash",
-    "auto"
+    "auto",
+    "lfm-3-1-7b",
+    "auto-code",
+    "gemini-omni-1-1-flash"
   ]
 }
