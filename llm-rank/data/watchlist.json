@@ -125,6 +125,7 @@
     "gemini-4-hydrogen",
     "particle-1-free",
     "ling-3-2-flash-free",
-    "qwen4-max"
+    "qwen4-max",
+    "hy4-flash"
   ]
 }
