@@ -1,13 +1,13 @@
 {
-  "snapshot": "2026-11-18",
-  "updatedAt": "2026-11-18T07:26:18.417Z",
+  "snapshot": "2026-11-19",
+  "updatedAt": "2026-11-19T07:23:35.783Z",
   "source": "openrouter",
   "sourceNote": "基于 OpenRouter 公开模型列表标注发布时间与收录新模型，热度为公开信息估算",
   "newWindowDays": 120,
   "latestRelease": {
-    "id": "gpt-6-2-astra-pro",
-    "name": "GPT-6.2 Astra Pro",
-    "releasedAt": "2026-11-17"
+    "id": "gemini-4-neon",
+    "name": "Gemini 4 Neon",
+    "releasedAt": "2026-11-18"
   },
   "modelCount": 48,
   "models": [
@@ -15,7 +15,7 @@
       "id": "gpt-5-1",
       "name": "GPT-5.1",
       "vendor": "OpenAI",
-      "usage": 65,
+      "usage": 64.3,
       "score": 92,
       "winRate": 86.4,
       "calls": 9.2,
@@ -32,14 +32,14 @@
       "summary": "综合能力最强，生态与工具链成熟，适合高端推理与复杂 Agent 任务。",
       "homepage": "https://openai.com",
       "rank": 1,
-      "share": 5.4,
+      "share": 5.26,
       "releasedAt": "2025-11-13"
     },
     {
       "id": "claude-sonnet-4-5",
       "name": "Claude Sonnet 4.5",
       "vendor": "Anthropic",
-      "usage": 43.6,
+      "usage": 44.1,
       "score": 94,
       "winRate": 84.1,
       "calls": 8.6,
@@ -56,14 +56,14 @@
       "summary": "长上下文与代码理解突出，输出风格稳健，适合文档与工程类场景。",
       "homepage": "https://anthropic.com",
       "rank": 2,
-      "share": 3.62,
+      "share": 3.61,
       "releasedAt": "2025-09-29"
     },
     {
       "id": "gpt-6-2-astra-pro",
       "name": "GPT-6.2 Astra Pro",
       "vendor": "openai",
-      "usage": 30,
+      "usage": 30.4,
       "score": 70.5,
       "winRate": 22.5,
       "calls": 3,
@@ -82,10 +82,143 @@
       "releasedAt": "2026-11-17"
     },
     {
+      "id": "gemini-4-neon",
+      "name": "Gemini 4 Neon",
+      "vendor": "google",
+      "usage": 30,
+      "score": 70.5,
+      "winRate": 22.5,
+      "calls": 3,
+      "context": 1024,
+      "price": 3,
+      "scenarios": [
+        "通用对话",
+        "代码生成",
+        "超长文档",
+        "多模态理解",
+        "多语言翻译"
+      ],
+      "summary": "",
+      "homepage": "https://openrouter.ai/google/gemini-4-neon",
+      "rank": 4,
+      "share": 2.45,
+      "releasedAt": "2026-11-18"
+    },
+    {
+      "id": "gpt-6-2-astra",
+      "name": "GPT-6.2 Astra",
+      "vendor": "openai",
+      "usage": 29.6,
+      "score": 70.4,
+      "winRate": 22.2,
+      "calls": 3,
+      "context": 1025,
+      "price": 8,
+      "scenarios": [
+        "通用对话",
+        "代码生成",
+        "超长文档",
+        "多模态理解"
+      ],
+      "summary": "",
+      "homepage": "https://openrouter.ai/openai/gpt-6.2-astra",
+      "rank": 5,
+      "share": 2.42,
+      "releasedAt": "2026-11-17"
+    },
+    {
+      "id": "nex-n2-6",
+      "name": "Nex-N2.6",
+      "vendor": "nex-agi",
+      "usage": 29.3,
+      "score": 70.3,
+      "winRate": 22,
+      "calls": 2.9,
+      "context": 256,
+      "price": 0.12,
+      "scenarios": [
+        "通用对话",
+        "超长文档",
+        "高并发低成本",
+        "企业知识库"
+      ],
+      "summary": "",
+      "homepage": "https://openrouter.ai/nex-agi/nex-n2.6",
+      "rank": 6,
+      "share": 2.4,
+      "releasedAt": "2026-11-10"
+    },
+    {
+      "id": "claude-fable-5-2",
+      "name": "Claude Fable 5.2",
+      "vendor": "anthropic",
+      "usage": 28.9,
+      "score": 70.1,
+      "winRate": 21.7,
+      "calls": 2.9,
+      "context": 977,
+      "price": 8,
+      "scenarios": [
+        "通用对话",
+        "代码生成",
+        "超长文档",
+        "多模态理解"
+      ],
+      "summary": "",
+      "homepage": "https://openrouter.ai/anthropic/claude-fable-5.2",
+      "rank": 7,
+      "share": 2.36,
+      "releasedAt": "2026-11-09"
+    },
+    {
+      "id": "midm-k-3-0-pro",
+      "name": "Mi:dm K 3.0 Pro",
+      "vendor": "kt",
+      "usage": 28.6,
+      "score": 70,
+      "winRate": 21.5,
+      "calls": 2.9,
+      "context": 256,
+      "price": 0.2,
+      "scenarios": [
+        "通用对话",
+        "超长文档",
+        "高并发低成本",
+        "企业知识库"
+      ],
+      "summary": "",
+      "homepage": "https://openrouter.ai/kt/midm-k-3.0-pro",
+      "rank": 8,
+      "share": 2.34,
+      "releasedAt": "2026-11-05"
+    },
+    {
+      "id": "motif-3",
+      "name": "Motif 3",
+      "vendor": "motif-technologies",
+      "usage": 28.3,
+      "score": 69.9,
+      "winRate": 21.2,
+      "calls": 2.8,
+      "context": 256,
+      "price": 0.3,
+      "scenarios": [
+        "通用对话",
+        "超长文档",
+        "高并发低成本",
+        "企业知识库"
+      ],
+      "summary": "",
+      "homepage": "https://openrouter.ai/motif-technologies/motif-3",
+      "rank": 9,
+      "share": 2.32,
+      "releasedAt": "2026-11-02"
+    },
+    {
       "id": "muse-ember",
       "name": "Muse Ember",
       "vendor": "meta",
-      "usage": 29.6,
+      "usage": 27.9,
       "score": 70.4,
       "winRate": 22.2,
       "calls": 3,
@@ -99,15 +232,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/meta/muse-ember",
-      "rank": 4,
-      "share": 2.46,
+      "rank": 10,
+      "share": 2.28,
       "releasedAt": "2026-11-09"
     },
     {
       "id": "pareto-26-9",
       "name": "Pareto 26.9",
       "vendor": "unbiased",
-      "usage": 29.3,
+      "usage": 27.6,
       "score": 70.3,
       "winRate": 22,
       "calls": 2.9,
@@ -120,15 +253,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/unbiased/pareto-26.9",
-      "rank": 5,
-      "share": 2.43,
+      "rank": 11,
+      "share": 2.26,
       "releasedAt": "2026-10-13"
     },
     {
       "id": "lfm-2-5-24b-a2b",
       "name": "LFM2.5-24B-A2B",
       "vendor": "liquid",
-      "usage": 28.9,
+      "usage": 27.2,
       "score": 70.1,
       "winRate": 21.7,
       "calls": 2.9,
@@ -141,15 +274,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/liquid/lfm-2.5-24b-a2b",
-      "rank": 6,
-      "share": 2.4,
+      "rank": 12,
+      "share": 2.23,
       "releasedAt": "2026-10-13"
     },
     {
       "id": "jev-router",
       "name": "Jev Router",
       "vendor": "typesafe",
-      "usage": 28.6,
+      "usage": 26.9,
       "score": 70,
       "winRate": 21.4,
       "calls": 2.9,
@@ -163,15 +296,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/typesafe/jev-router",
-      "rank": 7,
-      "share": 2.38,
+      "rank": 13,
+      "share": 2.2,
       "releasedAt": "2026-09-25"
     },
     {
       "id": "qwen3-8-max-prime",
       "name": "Qwen3.8 Max Prime",
       "vendor": "qwen",
-      "usage": 28.2,
+      "usage": 26.5,
       "score": 69.9,
       "winRate": 21.2,
       "calls": 2.8,
@@ -186,15 +319,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-      "rank": 8,
-      "share": 2.34,
+      "rank": 14,
+      "share": 2.17,
       "releasedAt": "2026-09-23"
     },
     {
       "id": "hy4-flash",
       "name": "Hy4 flash",
       "vendor": "tencent",
-      "usage": 27.9,
+      "usage": 26.1,
       "score": 70.3,
       "winRate": 22.2,
       "calls": 3,
@@ -208,15 +341,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/tencent/hy4-flash",
-      "rank": 9,
-      "share": 2.32,
+      "rank": 15,
+      "share": 2.14,
       "releasedAt": "2026-11-16"
     },
     {
       "id": "lfm-3-1-7b-free",
       "name": "LFM3-1.7B (free)",
       "vendor": "liquid",
-      "usage": 27.5,
+      "usage": 25.8,
       "score": 70.2,
       "winRate": 21.9,
       "calls": 2.9,
@@ -230,15 +363,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
-      "rank": 10,
-      "share": 2.28,
+      "rank": 16,
+      "share": 2.11,
       "releasedAt": "2026-11-06"
     },
     {
       "id": "kimi-k3-1-pro",
       "name": "Kimi K3.1 Pro",
       "vendor": "moonshotai",
-      "usage": 27.2,
+      "usage": 25.4,
       "score": 70.1,
       "winRate": 21.6,
       "calls": 2.9,
@@ -252,15 +385,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
-      "rank": 11,
-      "share": 2.26,
+      "rank": 17,
+      "share": 2.08,
       "releasedAt": "2026-10-23"
     },
     {
       "id": "nemotron-3-5-super-vl-free",
       "name": "Nemotron 3.5 Super VL (free)",
       "vendor": "nvidia",
-      "usage": 26.8,
+      "usage": 25.1,
       "score": 70,
       "winRate": 21.4,
       "calls": 2.8,
@@ -275,15 +408,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
-      "rank": 12,
-      "share": 2.23,
+      "rank": 18,
+      "share": 2.05,
       "releasedAt": "2026-10-15"
     },
     {
       "id": "claude-sonnet-5-5",
       "name": "Claude Sonnet 5.5",
       "vendor": "anthropic",
-      "usage": 26.5,
+      "usage": 24.8,
       "score": 69.8,
       "winRate": 21.1,
       "calls": 2.8,
@@ -297,15 +430,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/anthropic/claude-sonnet-5.5",
-      "rank": 13,
-      "share": 2.2,
+      "rank": 19,
+      "share": 2.03,
       "releasedAt": "2026-09-28"
     },
     {
       "id": "perceptron-mk1-5",
       "name": "Perceptron Mk1.5",
       "vendor": "perceptron",
-      "usage": 26.1,
+      "usage": 24.4,
       "score": 69.7,
       "winRate": 20.8,
       "calls": 2.8,
@@ -318,15 +451,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/perceptron/perceptron-mk1.5",
-      "rank": 14,
-      "share": 2.17,
+      "rank": 20,
+      "share": 2,
       "releasedAt": "2026-09-25"
     },
     {
       "id": "qwen4-max",
       "name": "Qwen4 Max",
       "vendor": "qwen",
-      "usage": 25.8,
+      "usage": 24.1,
       "score": 70.2,
       "winRate": 21.9,
       "calls": 2.9,
@@ -342,15 +475,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/qwen/qwen4-max",
-      "rank": 15,
-      "share": 2.14,
+      "rank": 21,
+      "share": 1.97,
       "releasedAt": "2026-11-16"
     },
     {
       "id": "gemini-nano-banana-2-1",
       "name": "Nano Banana 2.1",
       "vendor": "google",
-      "usage": 25.4,
+      "usage": 23.7,
       "score": 70.1,
       "winRate": 21.6,
       "calls": 2.9,
@@ -363,15 +496,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/google/gemini-nano-banana-2.1",
-      "rank": 16,
-      "share": 2.11,
+      "rank": 22,
+      "share": 1.94,
       "releasedAt": "2026-10-06"
     },
     {
       "id": "mistral-large-4-0",
       "name": "Mistral Large 4",
       "vendor": "mistralai",
-      "usage": 25.1,
+      "usage": 23.4,
       "score": 70,
       "winRate": 21.4,
       "calls": 2.8,
@@ -387,15 +520,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/mistralai/mistral-large-4-0",
-      "rank": 17,
-      "share": 2.08,
+      "rank": 23,
+      "share": 1.91,
       "releasedAt": "2026-10-06"
     },
     {
       "id": "gpt-6-1-sol",
       "name": "GPT-6.1 Sol",
       "vendor": "openai",
-      "usage": 24.7,
+      "usage": 23,
       "score": 69.8,
       "winRate": 21.1,
       "calls": 2.8,
@@ -409,15 +542,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/openai/gpt-6.1-sol",
-      "rank": 18,
-      "share": 2.05,
+      "rank": 24,
+      "share": 1.88,
       "releasedAt": "2026-09-29"
     },
     {
       "id": "ember-1",
       "name": "Ember-1",
       "vendor": "fireworks",
-      "usage": 24.4,
+      "usage": 22.6,
       "score": 69.7,
       "winRate": 20.8,
       "calls": 2.8,
@@ -430,15 +563,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/fireworks/ember-1",
-      "rank": 19,
-      "share": 2.03,
+      "rank": 25,
+      "share": 1.85,
       "releasedAt": "2026-09-24"
     },
     {
       "id": "glm-5-3-prime",
       "name": "GLM 5.3 Prime",
       "vendor": "z-ai",
-      "usage": 24,
+      "usage": 22.3,
       "score": 69.6,
       "winRate": 20.6,
       "calls": 2.7,
@@ -453,15 +586,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/z-ai/glm-5.3-prime",
-      "rank": 20,
-      "share": 1.99,
+      "rank": 26,
+      "share": 1.82,
       "releasedAt": "2026-09-23"
     },
     {
       "id": "lfm-3-1-7b",
       "name": "LFM3-1.7B",
       "vendor": "liquid",
-      "usage": 23.7,
+      "usage": 21.9,
       "score": 69.7,
       "winRate": 20.8,
       "calls": 2.8,
@@ -475,15 +608,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/liquid/lfm-3-1.7b",
-      "rank": 21,
-      "share": 1.97,
+      "rank": 27,
+      "share": 1.79,
       "releasedAt": "2026-11-06"
     },
     {
       "id": "auto-code",
       "name": "Auto Code",
       "vendor": "openrouter",
-      "usage": 23.3,
+      "usage": 21.6,
       "score": 69.6,
       "winRate": 20.5,
       "calls": 2.7,
@@ -498,15 +631,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/openrouter/auto-code",
-      "rank": 22,
-      "share": 1.94,
+      "rank": 28,
+      "share": 1.77,
       "releasedAt": "2026-11-05"
     },
     {
       "id": "gemini-omni-1-1-flash",
       "name": "Gemini Omni 1.1 Flash",
       "vendor": "google",
-      "usage": 23,
+      "usage": 21.3,
       "score": 69.5,
       "winRate": 20.3,
       "calls": 2.7,
@@ -521,15 +654,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/google/gemini-omni-1.1-flash",
-      "rank": 23,
-      "share": 1.91,
+      "rank": 29,
+      "share": 1.74,
       "releasedAt": "2026-11-04"
     },
     {
       "id": "deepseek-v4-1-flash-1017",
       "name": "DeepSeek V4.1 Flash 1017",
       "vendor": "deepseek",
-      "usage": 22.6,
+      "usage": 20.9,
       "score": 69.3,
       "winRate": 20,
       "calls": 2.7,
@@ -545,15 +678,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-      "rank": 24,
-      "share": 1.88,
+      "rank": 30,
+      "share": 1.71,
       "releasedAt": "2026-10-17"
     },
     {
       "id": "nemotron-3-5-super-vl",
       "name": "Nemotron 3.5 Super VL",
       "vendor": "nvidia",
-      "usage": 22.3,
+      "usage": 20.6,
       "score": 69.2,
       "winRate": 19.8,
       "calls": 2.6,
@@ -568,15 +701,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl",
-      "rank": 25,
-      "share": 1.85,
+      "rank": 31,
+      "share": 1.69,
       "releasedAt": "2026-10-15"
     },
     {
       "id": "ling-3-1-flash",
       "name": "Ling 3.1 Flash",
       "vendor": "inclusionai",
-      "usage": 21.9,
+      "usage": 20.2,
       "score": 69.1,
       "winRate": 19.5,
       "calls": 2.6,
@@ -590,15 +723,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/inclusionai/ling-3.1-flash",
-      "rank": 26,
-      "share": 1.82,
+      "rank": 32,
+      "share": 1.65,
       "releasedAt": "2026-10-02"
     },
     {
       "id": "ling-3-2-flash-free",
       "name": "Ling 3.2 Flash (free)",
       "vendor": "inclusionai",
-      "usage": 21.6,
+      "usage": 19.9,
       "score": 69.7,
       "winRate": 20.7,
       "calls": 2.8,
@@ -612,15 +745,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
-      "rank": 27,
-      "share": 1.79,
+      "rank": 33,
+      "share": 1.63,
       "releasedAt": "2026-11-13"
     },
     {
       "id": "gemini-omni-1-2-flash",
       "name": "Gemini Omni 1.2 Flash",
       "vendor": "google",
-      "usage": 21.2,
+      "usage": 19.5,
       "score": 69.6,
       "winRate": 20.5,
       "calls": 2.7,
@@ -635,15 +768,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/google/gemini-omni-1.2-flash",
-      "rank": 28,
-      "share": 1.76,
+      "rank": 34,
+      "share": 1.6,
       "releasedAt": "2026-11-05"
     },
     {
       "id": "beam-1-0-501b-a23b",
       "name": "Beam 1.0 501B A23B",
       "vendor": "reflection",
-      "usage": 20.9,
+      "usage": 19.1,
       "score": 69.4,
       "winRate": 20.2,
       "calls": 2.7,
@@ -657,15 +790,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/reflection/beam-1.0-501b-a23b",
-      "rank": 29,
-      "share": 1.74,
+      "rank": 35,
+      "share": 1.56,
       "releasedAt": "2026-10-16"
     },
     {
       "id": "pareto-26-10",
       "name": "Pareto 26.10",
       "vendor": "unbiased",
-      "usage": 20.5,
+      "usage": 18.8,
       "score": 69.3,
       "winRate": 20,
       "calls": 2.7,
@@ -679,15 +812,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/unbiased/pareto-26.10",
-      "rank": 30,
-      "share": 1.7,
+      "rank": 36,
+      "share": 1.54,
       "releasedAt": "2026-10-15"
     },
     {
       "id": "extract",
       "name": "Extract",
       "vendor": "scaledown",
-      "usage": 20.2,
+      "usage": 18.4,
       "score": 69.2,
       "winRate": 19.7,
       "calls": 2.6,
@@ -701,15 +834,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/scaledown/extract",
-      "rank": 31,
-      "share": 1.68,
+      "rank": 37,
+      "share": 1.51,
       "releasedAt": "2026-10-13"
     },
     {
       "id": "claude-haiku-5-5",
       "name": "Claude Haiku 5.5",
       "vendor": "anthropic",
-      "usage": 19.8,
+      "usage": 18.1,
       "score": 69.1,
       "winRate": 19.4,
       "calls": 2.6,
@@ -725,15 +858,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/anthropic/claude-haiku-5.5",
-      "rank": 32,
-      "share": 1.64,
+      "rank": 38,
+      "share": 1.48,
       "releasedAt": "2026-10-07"
     },
     {
       "id": "gemini-2-5-pro",
       "name": "Gemini 2.5 Pro",
       "vendor": "Google DeepMind",
-      "usage": 19.5,
+      "usage": 17.8,
       "score": 91,
       "winRate": 82.7,
       "calls": 7.4,
@@ -749,15 +882,15 @@
       ],
       "summary": "原生多模态与超长上下文，适合视频、图文混排与科研资料分析。",
       "homepage": "https://deepmind.google",
-      "rank": 33,
-      "share": 1.62,
+      "rank": 39,
+      "share": 1.46,
       "releasedAt": "2025-06-17"
     },
     {
       "id": "gemini-4-hydrogen",
       "name": "Gemini 4 Hydrogen",
       "vendor": "google",
-      "usage": 19.1,
+      "usage": 17.4,
       "score": 70.1,
       "winRate": 21.7,
       "calls": 2.9,
@@ -773,15 +906,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/google/gemini-4-hydrogen",
-      "rank": 34,
-      "share": 1.59,
+      "rank": 40,
+      "share": 1.42,
       "releasedAt": "2026-11-12"
     },
     {
       "id": "auto",
       "name": "Auto Router",
       "vendor": "openrouter",
-      "usage": 18.8,
+      "usage": 17.1,
       "score": 70,
       "winRate": 21.5,
       "calls": 2.9,
@@ -795,15 +928,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/openrouter/auto",
-      "rank": 35,
-      "share": 1.56,
+      "rank": 41,
+      "share": 1.4,
       "releasedAt": "2026-11-05"
     },
     {
       "id": "hy4",
       "name": "Hy4",
       "vendor": "tencent",
-      "usage": 18.4,
+      "usage": 16.7,
       "score": 69.9,
       "winRate": 21.2,
       "calls": 2.8,
@@ -817,15 +950,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/tencent/hy4",
-      "rank": 36,
-      "share": 1.53,
+      "rank": 42,
+      "share": 1.37,
       "releasedAt": "2026-11-04"
     },
     {
       "id": "particle-1-free",
       "name": "Particle-1 (free)",
       "vendor": "particle-ai",
-      "usage": 18.1,
+      "usage": 16.4,
       "score": 69.8,
       "winRate": 20.9,
       "calls": 2.8,
@@ -839,15 +972,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/particle-ai/particle-1:free",
-      "rank": 37,
-      "share": 1.5,
+      "rank": 43,
+      "share": 1.34,
       "releasedAt": "2026-10-28"
     },
     {
       "id": "minimax-m3-1-flash",
       "name": "MiniMax M3.1 Flash",
       "vendor": "minimax",
-      "usage": 17.7,
+      "usage": 16,
       "score": 69.6,
       "winRate": 20.7,
       "calls": 2.8,
@@ -861,15 +994,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/minimax/minimax-m3.1-flash",
-      "rank": 38,
-      "share": 1.47,
+      "rank": 44,
+      "share": 1.31,
       "releasedAt": "2026-10-19"
     },
     {
       "id": "glimpse",
       "name": "Glimpse",
       "vendor": "elorian",
-      "usage": 17.4,
+      "usage": 15.7,
       "score": 69.5,
       "winRate": 20.4,
       "calls": 2.7,
@@ -883,15 +1016,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/elorian/glimpse",
-      "rank": 39,
-      "share": 1.45,
+      "rank": 45,
+      "share": 1.28,
       "releasedAt": "2026-10-17"
     },
     {
       "id": "summarize",
       "name": "Summarize",
       "vendor": "scaledown",
-      "usage": 17,
+      "usage": 15.3,
       "score": 70.5,
       "winRate": 22.6,
       "calls": 3,
@@ -905,15 +1038,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/scaledown/summarize",
-      "rank": 40,
-      "share": 1.41,
+      "rank": 46,
+      "share": 1.25,
       "releasedAt": "2026-10-13"
     },
     {
       "id": "particle-1",
       "name": "Particle-1",
       "vendor": "particle-ai",
-      "usage": 16.7,
+      "usage": 14.9,
       "score": 70.2,
       "winRate": 21.9,
       "calls": 2.9,
@@ -927,15 +1060,15 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/particle-ai/particle-1",
-      "rank": 41,
-      "share": 1.39,
+      "rank": 47,
+      "share": 1.22,
       "releasedAt": "2026-10-28"
     },
     {
       "id": "gpt-6-1-terra",
       "name": "GPT-6.1 Terra",
       "vendor": "openai",
-      "usage": 16.3,
+      "usage": 14.6,
       "score": 70.1,
       "winRate": 21.6,
       "calls": 2.9,
@@ -951,340 +1084,12 @@
       ],
       "summary": "",
       "homepage": "https://openrouter.ai/openai/gpt-6.1-terra",
-      "rank": 42,
-      "share": 1.35,
-      "releasedAt": "2026-10-26"
-    },
-    {
-      "id": "flint-v1-0-free",
-      "name": "Flint (free)",
-      "vendor": "recursive",
-      "usage": 16,
-      "score": 70,
-      "winRate": 21.3,
-      "calls": 2.8,
-      "context": 256,
-      "price": 0,
-      "scenarios": [
-        "通用对话",
-        "超长文档",
-        "高并发低成本",
-        "企业知识库"
-      ],
-      "summary": "",
-      "homepage": "https://openrouter.ai/recursive/flint-v1.0:free",
-      "rank": 43,
-      "share": 1.33,
-      "releasedAt": "2026-10-21"
-    },
-    {
-      "id": "moondream3-1-9b-a2b",
-      "name": "Moondream 3.1",
-      "vendor": "moondream",
-      "usage": 15.6,
-      "score": 69.8,
-      "winRate": 21.1,
-      "calls": 2.8,
-      "context": 31,
-      "price": 0.3,
-      "scenarios": [
-        "通用对话",
-        "高并发低成本",
-        "企业知识库"
-      ],
-      "summary": "",
-      "homepage": "https://openrouter.ai/moondream/moondream3.1-9b-a2b",
-      "rank": 44,
-      "share": 1.3,
-      "releasedAt": "2026-10-15"
-    },
-    {
-      "id": "muse-spark-open",
-      "name": "Muse Spark Open",
-      "vendor": "meta",
-      "usage": 15.3,
-      "score": 69.7,
-      "winRate": 20.8,
-      "calls": 2.8,
-      "context": 1024,
-      "price": 1.25,
-      "scenarios": [
-        "通用对话",
-        "超长文档",
-        "企业知识库"
-      ],
-      "summary": "",
-      "homepage": "https://openrouter.ai/meta/muse-spark-open",
-      "rank": 45,
-      "share": 1.27,
-      "releasedAt": "2026-10-15"
-    },
-    {
-      "id": "gemini-4-argon",
-      "name": "Gemini 4 Argon",
-      "vendor": "google",
-      "usage": 14.9,
-      "score": 69.6,
-      "winRate": 20.6,
-      "calls": 2.7,
-      "context": 1024,
-      "price": 2,
-      "scenarios": [
-        "通用对话",
-        "代码生成",
-        "超长文档",
-        "多模态理解",
-        "多语言翻译"
-      ],
-      "summary": "",
-      "homepage": "https://openrouter.ai/google/gemini-4-argon",
-      "rank": 46,
-      "share": 1.24,
-      "releasedAt": "2026-10-13"
-    },
-    {
-      "id": "ernie-light-dt-1-0-intl",
-      "name": "ERNIE-Light-DT-1.0",
-      "vendor": "baidu",
-      "usage": 14.6,
-      "score": 70.3,
-      "winRate": 22.1,
-      "calls": 2.9,
-      "context": 1000,
-      "price": 1.13,
-      "scenarios": [
-        "通用对话",
-        "超长文档",
-        "企业知识库"
-      ],
-      "summary": "",
-      "homepage": "https://openrouter.ai/baidu/ernie-light-dt-1.0-intl",
-      "rank": 47,
-      "share": 1.21,
-      "releasedAt": "2026-11-10"
-    },
-    {
-      "id": "gemini-4-carbon",
-      "name": "Gemini 4 Carbon",
-      "vendor": "google",
-      "usage": 14.2,
-      "score": 70.2,
-      "winRate": 21.8,
-      "calls": 2.9,
-      "context": 1024,
-      "price": 2,
-      "scenarios": [
-        "通用对话",
-        "代码生成",
-        "超长文档",
-        "多模态理解",
-        "多语言翻译"
-      ],
-      "summary": "",
-      "homepage": "https://openrouter.ai/google/gemini-4-carbon",
       "rank": 48,
-      "share": 1.18,
-      "releasedAt": "2026-11-10"
+      "share": 1.19,
+      "releasedAt": "2026-10-26"
     }
   ],
   "history": [
-    {
-      "date": "2026-10-20",
-      "usage": [
-        {
-          "id": "gpt-5-1",
-          "heat": 77.5
-        },
-        {
-          "id": "claude-sonnet-4-5",
-          "heat": 68.3
-        },
-        {
-          "id": "gemini-2-5-pro",
-          "heat": 62.4
-        },
-        {
-          "id": "deepseek-v3-2",
-          "heat": 54.3
-        },
-        {
-          "id": "glm-5-3",
-          "heat": 47
-        },
-        {
-          "id": "kimi-k3",
-          "heat": 43.6
-        },
-        {
-          "id": "qwen3-max",
-          "heat": 43.2
-        },
-        {
-          "id": "llama-4-405b",
-          "heat": 42.9
-        },
-        {
-          "id": "grok-4",
-          "heat": 42.5
-        },
-        {
-          "id": "doubao-pro-2-0",
-          "heat": 41.7
-        },
-        {
-          "id": "mistral-large-3",
-          "heat": 39.7
-        },
-        {
-          "id": "ernie-5-0",
-          "heat": 39.3
-        },
-        {
-          "id": "grok-4-mini",
-          "heat": 39
-        },
-        {
-          "id": "hunyuan-turbos",
-          "heat": 33.7
-        },
-        {
-          "id": "yi-large-2",
-          "heat": 29.7
-        },
-        {
-          "id": "minimax-m3-1-flash-free",
-          "heat": 28.7
-        },
-        {
-          "id": "mercury-3",
-          "heat": 28.4
-        },
-        {
-          "id": "pareto-26-9",
-          "heat": 28
-        },
-        {
-          "id": "lfm-2-5-24b-a2b",
-          "heat": 27.7
-        },
-        {
-          "id": "gemini-4-argon",
-          "heat": 27.3
-        },
-        {
-          "id": "qwen3-8-max-prime",
-          "heat": 27
-        },
-        {
-          "id": "summarize",
-          "heat": 26.6
-        },
-        {
-          "id": "muse-wonder",
-          "heat": 26.3
-        },
-        {
-          "id": "gpt-6-1-sol-pro",
-          "heat": 25.9
-        },
-        {
-          "id": "ember-1",
-          "heat": 25.6
-        },
-        {
-          "id": "claude-opus-5-5",
-          "heat": 25.2
-        },
-        {
-          "id": "switchyard",
-          "heat": 24.9
-        },
-        {
-          "id": "command-r-2",
-          "heat": 24.5
-        },
-        {
-          "id": "schematron-v2-turbo",
-          "heat": 24.2
-        },
-        {
-          "id": "fugu-ultra-v2",
-          "heat": 23.8
-        },
-        {
-          "id": "ling-3-0-flash-vl",
-          "heat": 23.5
-        },
-        {
-          "id": "deepseek-v4-1-flash-1017",
-          "heat": 23.1
-        },
-        {
-          "id": "pareto-26-10",
-          "heat": 22.8
-        },
-        {
-          "id": "gemini-nano-banana-2-1",
-          "heat": 22.4
-        },
-        {
-          "id": "mistral-large-4-0",
-          "heat": 22.1
-        },
-        {
-          "id": "jev-router",
-          "heat": 21.7
-        },
-        {
-          "id": "glm-5-3-prime",
-          "heat": 21.4
-        },
-        {
-          "id": "deepseek-v4-1-flash",
-          "heat": 21
-        },
-        {
-          "id": "glimpse",
-          "heat": 20.7
-        },
-        {
-          "id": "xing4-0-29b-a4b-free",
-          "heat": 20.3
-        },
-        {
-          "id": "beam-1-0-501b-a23b",
-          "heat": 20
-        },
-        {
-          "id": "nemotron-3-5-super-vl-free",
-          "heat": 19.6
-        },
-        {
-          "id": "ling-3-1-flash",
-          "heat": 19.3
-        },
-        {
-          "id": "claude-sonnet-5-5",
-          "heat": 18.9
-        },
-        {
-          "id": "moondream3-1-9b-a2b",
-          "heat": 18.6
-        },
-        {
-          "id": "muse-spark-open",
-          "heat": 18.2
-        },
-        {
-          "id": "nemotron-3-5-super-vl",
-          "heat": 17.9
-        },
-        {
-          "id": "claude-haiku-5-5",
-          "heat": 17.5
-        }
-      ]
-    },
     {
       "date": "2026-10-21",
       "usage": [
@@ -6995,6 +6800,203 @@
         {
           "id": "gemini-4-carbon",
           "heat": 14.2
+        }
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "usage": [
+        {
+          "id": "gpt-5-1",
+          "heat": 64.3
+        },
+        {
+          "id": "claude-sonnet-4-5",
+          "heat": 44.1
+        },
+        {
+          "id": "gpt-6-2-astra-pro",
+          "heat": 30.4
+        },
+        {
+          "id": "gemini-4-neon",
+          "heat": 30
+        },
+        {
+          "id": "gpt-6-2-astra",
+          "heat": 29.6
+        },
+        {
+          "id": "nex-n2-6",
+          "heat": 29.3
+        },
+        {
+          "id": "claude-fable-5-2",
+          "heat": 28.9
+        },
+        {
+          "id": "midm-k-3-0-pro",
+          "heat": 28.6
+        },
+        {
+          "id": "motif-3",
+          "heat": 28.3
+        },
+        {
+          "id": "muse-ember",
+          "heat": 27.9
+        },
+        {
+          "id": "pareto-26-9",
+          "heat": 27.6
+        },
+        {
+          "id": "lfm-2-5-24b-a2b",
+          "heat": 27.2
+        },
+        {
+          "id": "jev-router",
+          "heat": 26.9
+        },
+        {
+          "id": "qwen3-8-max-prime",
+          "heat": 26.5
+        },
+        {
+          "id": "hy4-flash",
+          "heat": 26.1
+        },
+        {
+          "id": "lfm-3-1-7b-free",
+          "heat": 25.8
+        },
+        {
+          "id": "kimi-k3-1-pro",
+          "heat": 25.4
+        },
+        {
+          "id": "nemotron-3-5-super-vl-free",
+          "heat": 25.1
+        },
+        {
+          "id": "claude-sonnet-5-5",
+          "heat": 24.8
+        },
+        {
+          "id": "perceptron-mk1-5",
+          "heat": 24.4
+        },
+        {
+          "id": "qwen4-max",
+          "heat": 24.1
+        },
+        {
+          "id": "gemini-nano-banana-2-1",
+          "heat": 23.7
+        },
+        {
+          "id": "mistral-large-4-0",
+          "heat": 23.4
+        },
+        {
+          "id": "gpt-6-1-sol",
+          "heat": 23
+        },
+        {
+          "id": "ember-1",
+          "heat": 22.6
+        },
+        {
+          "id": "glm-5-3-prime",
+          "heat": 22.3
+        },
+        {
+          "id": "lfm-3-1-7b",
+          "heat": 21.9
+        },
+        {
+          "id": "auto-code",
+          "heat": 21.6
+        },
+        {
+          "id": "gemini-omni-1-1-flash",
+          "heat": 21.3
+        },
+        {
+          "id": "deepseek-v4-1-flash-1017",
+          "heat": 20.9
+        },
+        {
+          "id": "nemotron-3-5-super-vl",
+          "heat": 20.6
+        },
+        {
+          "id": "ling-3-1-flash",
+          "heat": 20.2
+        },
+        {
+          "id": "ling-3-2-flash-free",
+          "heat": 19.9
+        },
+        {
+          "id": "gemini-omni-1-2-flash",
+          "heat": 19.5
+        },
+        {
+          "id": "beam-1-0-501b-a23b",
+          "heat": 19.1
+        },
+        {
+          "id": "pareto-26-10",
+          "heat": 18.8
+        },
+        {
+          "id": "extract",
+          "heat": 18.4
+        },
+        {
+          "id": "claude-haiku-5-5",
+          "heat": 18.1
+        },
+        {
+          "id": "gemini-2-5-pro",
+          "heat": 17.8
+        },
+        {
+          "id": "gemini-4-hydrogen",
+          "heat": 17.4
+        },
+        {
+          "id": "auto",
+          "heat": 17.1
+        },
+        {
+          "id": "hy4",
+          "heat": 16.7
+        },
+        {
+          "id": "particle-1-free",
+          "heat": 16.4
+        },
+        {
+          "id": "minimax-m3-1-flash",
+          "heat": 16
+        },
+        {
+          "id": "glimpse",
+          "heat": 15.7
+        },
+        {
+          "id": "summarize",
+          "heat": 15.3
+        },
+        {
+          "id": "particle-1",
+          "heat": 14.9
+        },
+        {
+          "id": "gpt-6-1-terra",
+          "heat": 14.6
         }
       ]
     }

@@ -127,6 +127,8 @@
     "ling-3-2-flash-free",
     "qwen4-max",
     "hy4-flash",
-    "gpt-6-2-astra-pro"
+    "gpt-6-2-astra-pro",
+    "gemini-4-neon",
+    "gpt-6-2-astra"
   ]
 }
