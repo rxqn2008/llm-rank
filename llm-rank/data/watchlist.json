@@ -129,6 +129,8 @@
     "hy4-flash",
     "gpt-6-2-astra-pro",
     "gemini-4-neon",
-    "gpt-6-2-astra"
+    "gpt-6-2-astra",
+    "pixtral-large-2502",
+    "gpt-6-2-sol-pro"
   ]
 }
